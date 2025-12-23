@@ -3,10 +3,12 @@ title: Interfaces of Reality
 description: How Life, Mind, and Machines Navigate a World of Possibilities
 author: Stephane Fellah
 # GitHub Pages with /docs folder setup:
-# - baseurl should be "" (empty) because GitHub Pages serves /docs as root
-# - Update url to your actual GitHub Pages URL
-url: https://yourusername.github.io
-baseurl: ""  # Empty for /docs folder setup
+# - When using /docs folder, GitHub Pages serves it as root of the site
+# - For project sites: site is at username.github.io/repository-name
+# - baseurl should match the repository name path
+# Repository: https://github.com/fellahst/interfaces_of_reality_book
+url: https://fellahst.github.io
+baseurl: /interfaces_of_reality_book
 
 # Jekyll settings
 markdown: kramdown
