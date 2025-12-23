@@ -35,22 +35,6 @@ navigation:
     url: /
   - title: About the Author
     url: /about-author.html
-  - title: Physical Interfaces
-    url: /layer-01-physical.html
-  - title: Thermodynamic Interfaces
-    url: /layer-02-thermodynamic.html
-  - title: Spacetime Interfaces
-    url: /layer-03-spacetime.html
-  - title: Biological Interfaces
-    url: /layer-04-biological.html
-  - title: Sensorimotor Interfaces
-    url: /layer-05-sensorimotor.html
-  - title: Cognitive Interfaces
-    url: /layer-06-cognitive.html
-  - title: Semantic Interfaces
-    url: /layer-07-semantic.html
-  - title: Social Interfaces
-    url: /layer-08-social.html
-  - title: Technological Interfaces
-    url: /layer-09-technological.html
+  - title: Book
+    url: /
 
