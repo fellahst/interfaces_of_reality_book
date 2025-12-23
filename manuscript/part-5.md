@@ -1,0 +1,11 @@
+\mypart{Artificial Intelligence and Discovery}
+
+Artificial intelligence represents a new chapter in the story of interfaces, and it's happening right now. For the first time in history, we are building systems that can learn interfaces, discover boundaries, and reshape possibility spaces. This is extraordinary, and it reveals something profound about the structure of reality itself.
+
+The recent explosion in AI, particularly in large language models and image understanding systems, has provided the most striking confirmation of the interface perspective. These systems, trained on vast amounts of data without explicit programming, begin to independently discover the same structures that evolution and human cognition discovered: the syntax of language, the semantics of meaning, the geometry of visual understanding. They are not copying human intelligence; they are exploring the same landscape of possibilities and converging on the same interfaces.
+
+This part explores how AI systems learn interfaces rather than just patterns, how they can discover laws in the fabric of reality itself, and how they become agents that can discover and reshape boundaries. We examine how machine learning systems implicitly discover interfaces through generalization, how they can be guided to discover stable constraints that survive intervention, and how agentic AI must learn to respect boundaries to act safely and effectively.
+
+These chapters show that AI is not separate from the interface principles that govern reality. When AI systems succeed, they are discovering the same interfaces that physics, biology, and cognition have discovered. When they fail, it is often because they have not learned the boundaries that make their behavior stable and reliable. This insight transforms how we understand and build AI systems.
+
+Understanding how AI learns interfaces prepares us to design systems responsibly, to recognize the power we wield when we build systems that can reshape boundaries, and to confront the ethical implications of agentic AI. The future of intelligence is not artificial intelligence separate from human intelligence, but extended intelligence, human interfaces augmented by technology.

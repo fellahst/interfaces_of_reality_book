@@ -1,0 +1,36 @@
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata/
+.bundle/
+vendor/
+
+# Dependencies
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build artifacts
+*.log
+*.aux
+*.toc
+*.lof
+*.idx
+*.ind
+*.ilg
+*.out
+
+# Temporary files
+*.tmp
+*.temp
+

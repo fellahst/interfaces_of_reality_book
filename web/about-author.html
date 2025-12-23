@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About the Author - Interfaces of Reality</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .header .subtitle {
+            font-size: 1.3em;
+            opacity: 0.95;
+            font-style: italic;
+        }
+        .content {
+            padding: 40px;
+        }
+        .author-intro {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        .author-intro h2 {
+            color: #667eea;
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+        .author-intro p {
+            font-size: 1.2em;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            text-align: justify;
+            color: #444;
+        }
+        .section p:first-child {
+            font-size: 1.15em;
+            color: #333;
+        }
+        .highlight {
+            background: #f0f4ff;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 5px solid #667eea;
+            margin: 30px 0;
+        }
+        .highlight p {
+            font-style: italic;
+            color: #555;
+            margin: 0;
+        }
+        .navigation {
+            background: #2d3748;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .nav-link:hover {
+            background: rgba(255,255,255,0.2);
+        }
+        .nav-link.prev:before {
+            content: "← ";
+        }
+        .nav-link.next:after {
+            content: " →";
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>About the Author</h1>
+            <div class="subtitle">Stephane Fellah</div>
+        </div>
+        
+        <div class="content">
+            <div class="author-intro">
+                <h2>Stephane Fellah</h2>
+                <p>Systems architect, researcher, and entrepreneur working at the intersection of artificial intelligence, semantic technologies, geospatial systems, and foundational questions about how reality is structured.</p>
+            </div>
+
+            <div class="section">
+                <p>With more than three decades of experience, his work has spanned industry, standards bodies, and applied research, with a consistent focus on one underlying problem: how complex systems maintain coherence across scale, change, and uncertainty. His background combines software engineering, knowledge representation, spatial computing, and AI, with hands-on experience building large, interoperable systems in real-world environments.</p>
+            </div>
+
+            <div class="section">
+                <p>Stephane is the founder of Geoknoesis LLC, a consulting and research company exploring next-generation geospatial intelligence, semantic infrastructure, and AI-driven systems. He has been deeply involved in standards and interoperability efforts, including work related to the Spatial Web, digital twins, geospatial ontologies, and decentralized trust frameworks. His contributions emphasize modularity, interface design, and long-term system viability over short-term optimization.</p>
+            </div>
+
+            <div class="highlight">
+                <p>The ideas in this book emerged gradually through practice rather than abstraction. While working on ontology engineering, AI architectures, and what later became the Hyperspace Modeling Language, Stephane began noticing the same pattern repeating across domains: failures occurred not inside systems, but at their boundaries. Objects proved less important than the interfaces that connected them. Meaning, agency, and intelligence appeared not as substances, but as stable patterns maintained through constraint.</p>
+            </div>
+
+            <div class="section">
+                <p>This realization led him beyond traditional disciplinary boundaries, drawing inspiration from category theory, physics, systems theory, biology, and philosophy. <em>Interfaces of Reality</em> is the result of that synthesis, a personal attempt to articulate a unifying perspective that makes sense of matter, life, mind, machines, and ethics without reducing them to any single level of explanation.</p>
+            </div>
+
+            <div class="section">
+                <p>Stephane lives and works between theory and practice. He believes that the most important technologies of the coming decades will not be those that maximize power or speed, but those that respect boundaries, preserve meaning, and enable coordination at scale.</p>
+            </div>
+
+            <div class="section">
+                <p>When he is not designing systems or writing, he is thinking about how humanity might learn to shape its tools, and itself, with greater care.</p>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <a href="index.html" class="nav-link prev">Home</a>
+            <a href="layer-01-physical.html" class="nav-link next">Explore the Book →</a>
+        </div>
+    </div>
+</body>
+</html>
+

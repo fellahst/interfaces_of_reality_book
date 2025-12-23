@@ -1,0 +1,54 @@
+# Jekyll Configuration for Interfaces of Reality
+title: Interfaces of Reality
+description: How Life, Mind, and Machines Navigate a World of Possibilities
+author: Stephane Fellah
+# GitHub Pages with /docs folder setup:
+# - baseurl should be "" (empty) because GitHub Pages serves /docs as root
+# - Update url to your actual GitHub Pages URL
+url: https://yourusername.github.io
+baseurl: ""  # Empty for /docs folder setup
+
+# Jekyll settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title.html
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude files
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - .gitignore
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: About the Author
+    url: /about-author.html
+  - title: Physical Interfaces
+    url: /layer-01-physical.html
+  - title: Thermodynamic Interfaces
+    url: /layer-02-thermodynamic.html
+  - title: Spacetime Interfaces
+    url: /layer-03-spacetime.html
+  - title: Biological Interfaces
+    url: /layer-04-biological.html
+  - title: Sensorimotor Interfaces
+    url: /layer-05-sensorimotor.html
+  - title: Cognitive Interfaces
+    url: /layer-06-cognitive.html
+  - title: Semantic Interfaces
+    url: /layer-07-semantic.html
+  - title: Social Interfaces
+    url: /layer-08-social.html
+  - title: Technological Interfaces
+    url: /layer-09-technological.html
+

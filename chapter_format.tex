@@ -1,0 +1,368 @@
+% Custom formatting for chapters, parts, and preface
+\usepackage{mathpazo}  % Palatino font - professional and widely available
+\usepackage{titlesec}
+\usepackage{etoolbox}
+\usepackage{makeidx}
+\makeindex
+
+% Redefine theindex environment to not start a new page
+\makeatletter
+\renewenvironment{theindex}{%
+  \columnseprule \z@
+  \columnsep 35\p@
+  \begin{multicols}{2}[\vspace{0pt}]%
+  \parindent\z@
+  \parskip\z@ \@plus .3\p@\relax
+  \let\item\@idxitem
+}{%
+  \end{multicols}%
+}
+\makeatother
+\usepackage{multicol}
+\usepackage{graphicx}  % For including images
+\usepackage{float}  % For figure placement control
+% Allow figures to flow with text using best positioning, but prefer after paragraphs
+% !htbp: ! = more flexible, h = here, t = top, b = bottom, p = separate page
+\floatplacement{figure}{!htbp}
+% Spacing around figures - symmetric and consistent
+\setlength{\intextsep}{12pt}  % Space above and below in-text floats (symmetric around image)
+\setlength{\textfloatsep}{8pt}  % Space between float and surrounding text
+\setlength{\floatsep}{8pt}  % Space between multiple floats
+\setlength{\abovecaptionskip}{8pt}  % Space above caption / below image
+\setlength{\belowcaptionskip}{8pt}  % Space below caption (symmetric with above)
+% Ensure consistent paragraph spacing (not affected by figures)
+\makeatletter
+\g@addto@macro\@floatboxreset{%
+  \setlength{\parskip}{0pt}%
+}
+% Ensure paragraph spacing is consistent after figures
+\setlength{\parskip}{0pt plus 1pt}  % Minimal paragraph spacing throughout
+\makeatother
+\usepackage{tikz}  % For overlaying text on back cover
+\usepackage[absolute,overlay]{textpos}  % For absolute positioning of text
+\usepackage{xcolor}  % For text color
+
+% PDF bookmarks and hyperlinks
+% bookmarksopenlevel=2 means parts (0), chapters (1), and sections (2) will be open
+\usepackage[bookmarks=true,bookmarksopen=true,bookmarksopenlevel=2,colorlinks=false,pdfborder={0 0 0}]{hyperref}
+\usepackage{bookmark}
+\bookmarksetup{open}
+
+% --- FIX 1: Explicitly define the hierarchy levels ---
+% This ensures Part is the parent (0) and Chapter is the child (1)
+\makeatletter
+\def\toclevel@part{0}
+\def\toclevel@chapter{1}
+\def\toclevel@section{2}
+\def\toclevel@subsection{3}
+\makeatother
+
+% Increase base font size slightly (default is 10pt, we'll use 11pt)
+\makeatletter
+\renewcommand{\normalsize}{%
+  \@setfontsize\normalsize{11pt}{13.5pt}%
+  \abovedisplayskip 10\p@ \@plus2\p@ \@minus5\p@
+  \abovedisplayshortskip \z@ \@plus3\p@
+  \belowdisplayshortskip 6\p@ \@plus3\p@ \@minus3\p@
+  \belowdisplayskip \abovedisplayskip
+  \let\@listi\@listI}
+\makeatother
+
+% Reset section counter for each chapter (not each part)
+\makeatletter
+\@addtoreset{section}{chapter}
+\makeatother
+
+% Add copyright page right after title page and bookmark for title page
+% Then add About the Author right after copyright page
+\makeatletter
+\AtBeginDocument{%
+  \let\oldmaketitle\maketitle
+  \renewcommand{\maketitle}{%
+    % Front cover image - full page, stretch to fill page (no blank page before)
+    \thispagestyle{empty}
+    \pdfbookmark[0]{Title Page}{titlepage}%
+    \phantomsection
+    \begin{tikzpicture}[remember picture,overlay]
+      \node[anchor=center,inner sep=0] at (current page.center) {
+        \includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio=false]{assets/front-page.jpg}
+      };
+    \end{tikzpicture}
+    \newpage
+    \thispagestyle{empty}
+    \vspace*{\fill}
+    \begin{center}
+    \large
+    \textbf{Interfaces of Reality}\\[0.3\baselineskip]
+    \textit{How Life, Mind, and Machines Navigate a World of Possibilities}\\[1\baselineskip]
+    
+    Copyright \copyright\ 2025 by Stephane Fellah\\[0.5\baselineskip]
+    
+    All rights reserved.\\[0.3\baselineskip]
+    
+    No part of this book may be reproduced, stored in a retrieval system, or transmitted in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of the author, except in the case of brief quotations embodied in critical reviews and certain other noncommercial uses permitted by copyright law.\\[0.5\baselineskip]
+    
+    For permission requests, please contact the author.\\[1\baselineskip]
+    
+    First Edition\\[0.3\baselineskip]
+    
+    2025
+    \end{center}
+    \vspace*{\fill}
+    \newpage
+  }
+}
+\makeatother
+
+% Initialize part counter to 0 so first part is I
+\setcounter{part}{0}
+
+% Define a custom part command that centers title on its own page, intro on next page
+% Use addcontentsline which handles nesting automatically via toclevel@part
+\makeatletter
+\newcommand{\mypart}[1]{%
+  \clearpage%
+  \stepcounter{part}%
+  % Create anchor on title page (before any text)
+  \phantomsection%
+  % Add to TOC - this automatically creates bookmark at level 0
+  % Because we set toclevel@part to 0, this opens a new 'folder' in the bookmarks
+  \addcontentsline{toc}{part}{\partname\space\Roman{part}: #1}%
+  \thispagestyle{empty}%
+  \vspace*{\fill}%
+  \begin{center}%
+    \Huge\bfseries \partname\space\Roman{part}\\[0.5\baselineskip]%
+    \Huge\bfseries #1%
+  \end{center}%
+  \vspace*{\fill}%
+  \clearpage%
+}
+\makeatother
+
+% Define a custom epilogue command at the same level as parts
+% Use standard commands so they close the previous Part correctly
+\newcommand{\myepilogue}[1]{%
+  \clearpage%
+  \phantomsection%
+  \bookmarksetup{startatroot}% Return to root level (sibling of Parts)
+  \addcontentsline{toc}{part}{#1}%
+  \thispagestyle{empty}%
+  \vspace*{\fill}%
+  \begin{center}%
+    \Huge\bfseries #1%
+  \end{center}%
+  \vspace*{\fill}%
+  \clearpage%
+}
+
+\makeatletter
+\newcommand{\myacknowledgments}[1]{%
+  \clearpage%
+  \bookmarksetup{startatroot}% Return to root level (sibling of Parts)
+  \phantomsection%
+  \hypertarget{acknowledgmentsanchor}{}%
+  \chapter*{#1}%
+  \@nobreakfalse
+  \addtocontents{toc}{\protect\contentsline{part}{#1}{\thepage}{}}%
+  \bookmark[level=0,dest=acknowledgmentsanchor]{#1}%
+}
+\makeatother
+
+\makeatletter
+\newcommand{\myreferences}[1]{%
+  \clearpage%
+  \bookmarksetup{startatroot}% Return to root level (sibling of Parts)
+  \phantomsection%
+  \hypertarget{referencesanchor}{}%
+  \chapter*{#1}%
+  \@nobreakfalse
+  \addtocontents{toc}{\protect\contentsline{part}{#1}{\thepage}{}}%
+  \bookmark[level=0,dest=referencesanchor]{#1}%
+}
+\makeatother
+
+% Define a custom appendices command at the same level as parts
+% Use standard commands so they close the previous Part correctly
+\newcommand{\myappendices}[1]{%
+  \clearpage%
+  \phantomsection%
+  \bookmarksetup{startatroot}% Return to root level
+  \addcontentsline{toc}{part}{#1}%
+  \thispagestyle{empty}%
+  \vspace*{\fill}%
+  \begin{center}%
+    \Huge\bfseries #1%
+  \end{center}%
+  \vspace*{\fill}%
+  \clearpage%
+}
+
+% Ensure chapters are numbered
+% Do NOT redefine \@chapter or \Hy@chapterbookmark
+% Titlesec + Hyperref + toclevel@chapter handle this automatically now
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries}
+  {\chaptertitlename\ \thechapter}
+  {20pt}
+  {\Huge}
+
+% Make preface unnumbered
+\titleformat{name=\chapter,numberless}[display]
+  {\normalfont\huge\bfseries}
+  {}
+  {0pt}
+  {\Huge}
+
+% Format sections and subsections in appendices to be unnumbered
+% Also ensure that after \appendix, all sections are treated as numberless
+\titleformat{name=\section,numberless}
+  {\normalfont\Large\bfseries}
+  {}
+  {0pt}
+  {}
+\titleformat{name=\subsection,numberless}
+  {\normalfont\large\bfseries}
+  {}
+  {0pt}
+  {}
+
+% After \appendix, make all sections numberless
+\apptocmd{\appendix}{%
+  \setcounter{secnumdepth}{0}%
+  \renewcommand{\thesection}{}%
+  \renewcommand{\thesubsection}{}%
+}{}{}
+
+% Customize List of Figures title
+\renewcommand{\listfigurename}{List of Figures}
+
+% Fix Preface to be at root level (sibling of Table of Contents) and prevent duplication
+\makeatletter
+% Patch chapter* to suppress automatic bookmark for Preface and About the Author
+% Save original Hy@writebookmark and bookmark if not already saved
+\@ifundefined{Hy@writebookmark@original}{%
+  \let\Hy@writebookmark@original\Hy@writebookmark
+}{}
+\@ifundefined{bookmark@original}{%
+  \let\bookmark@original\bookmark
+}{}
+\let\old@schapter\@schapter
+\newif\ifprefacechapter
+\prefacechapterfalse
+\renewcommand{\@schapter}[1]{%
+  \def\temp{#1}%
+  \def\tempa{Preface}%
+  \def\tempb{About the Author}%
+  \ifx\temp\tempa
+    % Preface: suppress automatic bookmark by temporarily disabling bookmark creation
+    \prefacechaptertrue
+    \let\Hy@writebookmark\@gobble
+    % Also suppress bookmark package's automatic creation
+    \let\bookmark\@gobble
+    \old@schapter{#1}%
+    \let\Hy@writebookmark\Hy@writebookmark@original
+    \let\bookmark\bookmark@original
+    % Create our manual bookmark after chapter is created (only if not already created)
+    \ifprefaceadded\else
+      \bookmarksetup{startatroot}%
+      \phantomsection
+      \hypertarget{prefaceanchor}{}%
+      \bookmark[level=0,dest=prefaceanchor]{#1}%
+      \prefaceaddedtrue
+    \fi
+    \prefacechapterfalse
+  \else
+    \ifx\temp\tempb
+      % About the Author: suppress automatic bookmark (we create it in addcontentsline)
+      \let\Hy@writebookmark\@gobble
+      \let\bookmark\@gobble
+      \old@schapter{#1}%
+      \let\Hy@writebookmark\Hy@writebookmark@original
+      \let\bookmark\bookmark@original
+    \else
+      \old@schapter{#1}%
+    \fi
+  \fi
+}
+
+% Intercept addcontentsline for Preface and About the Author - convert to part-level entries
+\let\oldaddcontentsline\addcontentsline
+\newif\ifprefaceadded
+\prefaceaddedfalse
+\newif\ifaboutauthoradded
+\aboutauthoraddedfalse
+\renewcommand{\addcontentsline}[3]{%
+  \def\temp{#1#2#3}%
+  \def\tempa{tocchapterPreface}%
+  \def\tempb{tocchapterAbout the Author}%
+  \ifx\temp\tempa
+    % Preface: only add TOC entry (bookmark already created in @schapter)
+    \ifprefaceadded\else
+      \oldaddcontentsline{toc}{part}{#3}%
+      \prefaceaddedtrue
+    \fi
+  \else
+    \ifx\temp\tempb
+      % About the Author: add as part-level entry with root-level bookmark
+      \ifaboutauthoradded\else
+        \bookmarksetup{startatroot}%
+        \phantomsection
+        \hypertarget{aboutauthoranchor}{}%
+        \oldaddcontentsline{toc}{part}{#3}%
+        \bookmark[level=0,dest=aboutauthoranchor]{#3}%
+        \aboutauthoraddedtrue
+      \fi
+    \else
+      \oldaddcontentsline{#1}{#2}{#3}%
+    \fi
+  \fi
+}
+
+
+% Add bookmarks for Table of Contents and Index
+\makeatletter
+\AtBeginDocument{%
+  % Bookmark for Table of Contents - only create once
+  \let\oldtableofcontents\tableofcontents
+  \newif\iftocbookmarkcreated
+  \tocbookmarkcreatedfalse
+  \renewcommand{\tableofcontents}{%
+    \iftocbookmarkcreated\else
+      \phantomsection
+      \hypertarget{tocanchor}{}%
+      \bookmark[level=0,dest=tocanchor]{Table of Contents}%
+      \tocbookmarkcreatedtrue
+    \fi
+    \oldtableofcontents
+    % Add List of Figures after Table of Contents
+    \clearpage
+    \bookmark[level=0,dest=lofanchor]{List of Figures}%
+    \phantomsection
+    \hypertarget{lofanchor}{}%
+    \listoffigures
+  }
+  
+  % Bookmark for Index (at the end) - at part level, explicitly at root
+  % Suppress automatic bookmark from addcontentsline, create manually
+  % Close any open bookmark contexts and create at root level
+  \let\oldprintindex\printindex
+  \renewcommand{\printindex}{%
+    \clearpage
+    \thispagestyle{empty}%
+    \pagestyle{empty}%
+    \bookmarksetup{startatroot}%
+    \phantomsection
+    \hypertarget{indexanchor}{}%
+    % Add index title
+    \vspace*{0.5in}%
+    {\centering\Huge\bfseries Index\par}%
+    \vspace{1\baselineskip}%
+    \@nobreakfalse
+    \addtocontents{toc}{\protect\contentsline{part}{Index}{\thepage}{}}%
+    \bookmark[level=0,dest=indexanchor]{Index}%
+    % Print the actual index content
+    \@input@{\jobname.ind}%
+  }
+  
+}
+\makeatother

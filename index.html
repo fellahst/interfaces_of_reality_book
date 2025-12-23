@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaces of Reality - How Life, Mind, and Machines Navigate a World of Possibilities</title>
+    <meta name="description" content="Explore how interfaces shape reality, connecting physics, biology, cognitive science, and technology. A groundbreaking exploration of boundaries, possibilities, and the nature of existence.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #1a1a2e;
+            --secondary-color: #16213e;
+            --accent-color: #0f3460;
+            --highlight-color: #533483;
+            --text-light: #e94560;
+            --text-primary: #ffffff;
+            --text-secondary: #e0e0e0;
+            --text-muted: #b0b0b0;
+            --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--primary-color);
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(26, 26, 46, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 2rem;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        nav .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: var(--text-light);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8rem 2rem 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 50%, rgba(83, 52, 131, 0.3) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 80%, rgba(15, 52, 96, 0.3) 0%, transparent 50%);
+            z-index: 0;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-content .subtitle {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+        }
+
+        .hero-content .author {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+
+        .hero-content p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: var(--gradient-1);
+            color: white;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-light);
+            border: 2px solid var(--text-light);
+        }
+
+        .btn-secondary:hover {
+            background: var(--text-light);
+            color: var(--primary-color);
+        }
+
+        .hero-image {
+            position: relative;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            transform: perspective(1000px) rotateY(-5deg) rotateX(5deg);
+            transition: transform 0.3s;
+        }
+
+        .hero-image:hover img {
+            transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
+        }
+
+        /* About Section */
+        .section {
+            padding: 6rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            text-align: center;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .about-content {
+            font-size: 1.2rem;
+            line-height: 1.9;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .illustration-container {
+            margin: 4rem auto 0;
+            max-width: 900px;
+            text-align: center;
+        }
+
+        .illustration-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s;
+        }
+
+        .illustration-container img:hover {
+            transform: scale(1.02);
+        }
+
+        .illustration-caption {
+            margin-top: 1.5rem;
+            color: var(--text-muted);
+            font-style: italic;
+            font-size: 1rem;
+        }
+
+        /* Themes Section */
+        .themes {
+            background: var(--secondary-color);
+            padding: 6rem 2rem;
+        }
+
+        .themes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .theme-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s;
+        }
+
+        .theme-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.08);
+            border-color: var(--text-light);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .theme-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-light);
+        }
+
+        .theme-card p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* Quote Section */
+        .quote-section {
+            padding: 6rem 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .quote {
+            font-size: 1.8rem;
+            font-style: italic;
+            color: var(--text-secondary);
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.8;
+            position: relative;
+            padding: 2rem;
+        }
+
+        .quote::before,
+        .quote::after {
+            content: '"';
+            font-size: 4rem;
+            color: var(--text-light);
+            opacity: 0.3;
+            position: absolute;
+        }
+
+        .quote::before {
+            top: -10px;
+            left: 0;
+        }
+
+        .quote::after {
+            bottom: -30px;
+            right: 0;
+        }
+
+        /* Author Section */
+        .author-section {
+            background: var(--secondary-color);
+            padding: 6rem 2rem;
+        }
+
+        .author-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .author-content h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-light);
+        }
+
+        .author-content p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary-color);
+            padding: 3rem 2rem;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        footer p {
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        footer a {
+            color: var(--text-light);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-content .subtitle {
+                font-size: 1.2rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .themes-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .quote {
+                font-size: 1.4rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Interfaces of Reality</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#themes">Themes</a></li>
+                <li><a href="web/about-author.html">Author</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Interfaces of Reality</h1>
+                <p class="subtitle">How Life, Mind, and Machines Navigate a World of Possibilities</p>
+                <p class="author">by Stephane Fellah</p>
+                <p>Explore how interfaces shape reality, connecting physics, biology, cognitive science, and technology. Discover a groundbreaking perspective on boundaries, possibilities, and the fundamental nature of existence.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary">Get the Book</a>
+                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/interfaces_frontcover.jpg" alt="Interfaces of Reality Book Cover">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2 class="section-title">About the Book</h2>
+        <div class="about-content">
+            <p>This book explores the fundamental concept of interfaces as the boundaries where different systems, entities, and realities meet and interact. Through the lenses of physics, biology, cognitive science, and technology, we examine how interfaces shape possibilities, enable communication, and define the boundaries of what is real and what is possible.</p>
+            <p>Reality is not fundamentally made of things, but of stable interfaces navigating a structured space of possibilities. This is not a denial of matter or physics, but a shift in what we treat as primary: from self-contained objects to the constraints and boundaries that allow stable patterns to exist at all.</p>
+            <p>Once you begin looking at the world through this lens, ideas that had previously seemed unrelated begin to align. Platonic notions of form, category theory's emphasis on transformations, the Free Energy Principle, and artificial intelligence all point toward the same underlying structure once we stop treating things as primary and start paying attention to the conditions that make things possible.</p>
+        </div>
+        <div class="illustration-container">
+            <img src="assets/interface_stack.jpg" alt="Interface Stack Illustration">
+            <p class="illustration-caption">The interface stack: how boundaries and constraints create stable patterns across scales</p>
+        </div>
+    </section>
+
+    <section id="themes" class="themes">
+        <h2 class="section-title">Key Themes</h2>
+        <div class="themes-grid">
+            <div class="theme-card">
+                <h3>Interfaces as Boundaries</h3>
+                <p>Explore how boundaries between systems create stable patterns, regulate interactions, and enable persistence in the face of uncertainty.</p>
+            </div>
+            <div class="theme-card">
+                <h3>Possibility Spaces</h3>
+                <p>Understand how reality navigates structured spaces of possibilities, revealing why certain forms appear inevitable while others never emerge.</p>
+            </div>
+            <div class="theme-card">
+                <h3>Convergence Across Domains</h3>
+                <p>Discover how evolution, cognition, language, and artificial intelligence independently arrive at similar solutions, pointing to deeper underlying structures.</p>
+            </div>
+            <div class="theme-card">
+                <h3>From Objects to Relations</h3>
+                <p>Examine how category theory, modern physics, and computational models suggest that relationships and transformations are more fundamental than objects.</p>
+            </div>
+            <div class="theme-card">
+                <h3>Life and Intelligence</h3>
+                <p>Investigate how biological systems and minds maintain coherence through active interfaces that balance internal expectations with external reality.</p>
+            </div>
+            <div class="theme-card">
+                <h3>The Nature of Persistence</h3>
+                <p>Learn why identity depends less on substance than on constraint, and how stable patterns emerge from the right balance of forces and boundaries.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="quote-section">
+        <div class="quote">
+            Reality is not fundamentally made of things, but of stable interfaces navigating a structured space of possibilities.
+        </div>
+    </section>
+
+    <section id="author" class="author-section">
+        <div class="author-content">
+            <h2>About the Author</h2>
+            <p>Stephane Fellah is a systems architect, researcher, and entrepreneur working at the intersection of artificial intelligence, semantic technologies, geospatial systems, and foundational questions about how reality is structured. With more than three decades of experience, his work has spanned industry, standards bodies, and applied research.</p>
+            <p style="margin-top: 1.5rem;"><a href="web/about-author.html" style="color: var(--text-light); text-decoration: underline;">Read more about the author →</a></p>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>&copy; 2024 Stephane Fellah. All rights reserved.</p>
+        <p>
+            <a href="mailto:contact@example.com">Contact</a> | 
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms of Service</a>
+        </p>
+    </footer>
+</body>
+</html>
+

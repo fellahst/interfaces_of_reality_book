@@ -1,0 +1,11 @@
+\mypart{Life, Mind, and Intelligence}
+
+With physical and thermodynamic interfaces in place, something extraordinary becomes possible: systems that actively maintain themselves. This is one of the most profound transitions in the history of the universe, and it reveals something remarkable about how life and mind actually work.
+
+This part traces the emergence of life, mind, and intelligence through the lens of interfaces, showing how the same principles that create atoms also create consciousness. We begin with biological interfaces, the boundaries that allow cells to maintain coherence, organisms to persist, and life to flourish. You'll discover that a cell is not defined by its molecules, but by its membrane, the interface that creates the possibility of life itself.
+
+We then explore sensorimotor interfaces, which enable organisms to engage with their environments through perception and action. A simple bacterium swimming toward food is doing something that would take a supercomputer to simulate, and it's all because of interfaces. Next, we examine Markov blankets and the free energy principle, revealing how inferential interfaces give rise to selves and agency. This is where the mystery of consciousness begins to resolve: selves are not things, but patterns of inference maintained by boundaries.
+
+Finally, we consider emergence, showing how complex behaviors arise naturally from layered interfaces without requiring new substances or forces. An ant colony exhibits intelligence not because of a central controller, but because interfaces coordinate local interactions into global patterns.
+
+These chapters reveal a profound continuity from physics to biology to cognition. The same logic of boundary maintenance operates at every level. What changes is not the fundamental principle, but the complexity of the interfaces and the richness of the interactions they enable. By the end of this part, you will see that life and mind are not mysterious additions to the universe. They are natural consequences of interfaces stacking, constraining, and coordinating interaction across scales. This changes everything we thought we knew about what it means to be alive, to think, to be conscious.

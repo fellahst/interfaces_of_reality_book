@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Interfaces - Interfaces of Reality</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .header .subtitle {
+            font-size: 1.3em;
+            opacity: 0.95;
+            font-style: italic;
+        }
+        .layer-info {
+            background: #f8f9fa;
+            padding: 30px 40px;
+            border-bottom: 3px solid #764ba2;
+        }
+        .layer-info h2 {
+            color: #764ba2;
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+        .layer-info .position {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .content {
+            padding: 40px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h3 {
+            color: #764ba2;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            border-left: 5px solid #667eea;
+            padding-left: 15px;
+        }
+        .section p {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            text-align: justify;
+        }
+        .key-concepts {
+            background: #f3f4f6;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .key-concepts h4 {
+            color: #764ba2;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+        .key-concepts ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .key-concepts li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+        .key-concepts li:before {
+            content: "👥";
+            position: absolute;
+            left: 0;
+            color: #764ba2;
+            font-size: 1.2em;
+        }
+        .navigation {
+            background: #2d3748;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .nav-link:hover {
+            background: rgba(255,255,255,0.2);
+        }
+        .nav-link.prev:before {
+            content: "← ";
+        }
+        .nav-link.next:after {
+            content: " →";
+        }
+        .quote {
+            font-style: italic;
+            color: #555;
+            border-left: 4px solid #764ba2;
+            padding-left: 20px;
+            margin: 20px 0;
+            font-size: 1.15em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Social Interfaces</h1>
+            <div class="subtitle">Coordinating Behavior Across Individuals</div>
+        </div>
+        
+        <div class="layer-info">
+            <h2>Layer 8: Social Interfaces</h2>
+            <div class="position">Built on Semantic Interfaces - Coordinates behavior and enables cooperation</div>
+            <p>Social interfaces coordinate behavior across individuals. They include norms, institutions, and legal frameworks that shape how people can interact while preserving social coherence. These interfaces create the conditions for cooperation and collective action.</p>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h3>Norms as Interfaces</h3>
+                <p>Social norms are interfaces that constrain how individuals can interact. They are not just rules or conventions; they are boundaries that make coordinated behavior possible. Norms create expectations, enable prediction, and allow people to coordinate their actions without explicit communication.</p>
+                <img src="../assets/semantic_negotiated_constraint.jpg" alt="Semantics as Negotiated Constraint" style="width: 100%; max-width: 800px; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                <p>As shown above, this shows how social norms work as negotiated constraints. Like semantic interfaces, social interfaces create boundaries within which disagreement and variation can occur. The boundary itself defines what counts as valid behavior, argument, or evidence. People can disagree about specific issues while respecting the same boundary rules. This bounded disagreement enables coordination, the interface constrains disagreement without eliminating it, creating the conditions for productive social interaction.</p>
+                <p class="quote">"Social interfaces coordinate behavior across individuals while preserving social coherence."</p>
+            </div>
+
+            <div class="section">
+                <h3>Institutions as Stabilizing Structures</h3>
+                <p>Institutions are formalized social interfaces. They include legal systems, economic structures, educational systems, and political organizations. Like biological membranes, institutions create boundaries that maintain coherence while allowing exchange.</p>
+                <img src="../assets/stability_without_rigidity.jpg" alt="Stability Without Rigidity" style="width: 100%; max-width: 800px; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                <p>As shown above, this shows how institutions can maintain stability without rigidity. Like good interfaces, institutions create boundaries that enable coordination while remaining flexible enough to adapt. They don't freeze social structures in place, but create the constraints that make large-scale cooperation possible. Institutions stabilize social interfaces, making them more robust and persistent, while still allowing evolution and change within the boundaries they establish.</p>
+                <p>Institutions stabilize social interfaces, making them more robust and persistent. They create the conditions for large-scale cooperation and collective action that would be impossible without them.</p>
+            </div>
+
+            <div class="section">
+                <h3>Legal Frameworks</h3>
+                <p>Legal systems create shared worlds through semantic interfaces, the constraints of legal language, the norms of procedure, the standards of evidence, the traditions of interpretation. These interfaces create the conditions under which legal decisions can be made, justified, and enforced.</p>
+                <img src="../assets/ontology_and_power.jpg" alt="Ontologies and Power" style="width: 100%; max-width: 800px; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                <p>As shown above, this shows how legal frameworks, as semantic interfaces, shape behavior by deciding which distinctions matter. Classification systems demonstrate how different ontologies create different categories that influence behavior. Legal interfaces don't just describe the world, they shape it by creating the boundaries that determine what counts as valid argument, evidence, or precedent. These interfaces coordinate interpretation while also exercising power by determining which distinctions matter.</p>
+                <p>A lawyer in the United States and a lawyer in the United Kingdom can understand each other's legal reasoning because they share similar semantic interfaces, even though their specific laws differ. The interfaces coordinate interpretation across jurisdictions, enabling international legal cooperation.</p>
+                <img src="../assets/stability_under_change.jpg" alt="Stability Under Change" style="width: 100%; max-width: 800px; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                <p>As shown above, this shows how social interfaces can maintain stability even as they evolve. Legal systems, like all good interfaces, must be stable enough to enable coordination while flexible enough to adapt to changing circumstances. The interface maintains coherence by constraining how change can occur, ensuring that evolution remains compatible with existing structures. This stability under change is what enables institutions to persist and function effectively over time.</p>
+            </div>
+
+            <div class="key-concepts">
+                <h4>Key Concepts</h4>
+                <ul>
+                    <li><strong>Social Norms:</strong> Interfaces that constrain individual interaction</li>
+                    <li><strong>Institutions:</strong> Formalized social interfaces</li>
+                    <li><strong>Legal Frameworks:</strong> Semantic interfaces for justice and order</li>
+                    <li><strong>Cooperation:</strong> Coordinated behavior enabled by social interfaces</li>
+                    <li><strong>Collective Action:</strong> Large-scale coordination through interfaces</li>
+                    <li><strong>Social Coherence:</strong> Stability maintained by social boundaries</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>Building on Semantic Interfaces</h3>
+                <p>Social interfaces build upon semantic interfaces. They rely on the shared meaning and communication established at the semantic level, but add the ability to coordinate behavior across many individuals, enabling cooperation, institutions, and collective action at scales that would be impossible without these interfaces.</p>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <a href="layer-07-semantic.html" class="nav-link prev">Previous: Semantic Interfaces</a>
+            <a href="layer-09-technological.html" class="nav-link next">Next: Technological Interfaces</a>
+        </div>
+    </div>
+</body>
+</html>
+
