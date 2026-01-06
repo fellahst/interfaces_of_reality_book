@@ -331,10 +331,16 @@ permalink: /order/
     </form>
 </div>
 
-<!-- Stripe.js -->
+<!-- Stripe.js - Must be loaded over HTTPS -->
 <script src="https://js.stripe.com/v3/"></script>
 
 <script>
+    // Security check: Ensure page is served over HTTPS
+    if (window.location.protocol !== 'https:' && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+        // Redirect to HTTPS
+        window.location.replace('https:' + window.location.href.substring(window.location.protocol.length));
+    }
+
     // Configuration - REPLACE THESE VALUES BEFORE PRODUCTION
     // 
     // IMPORTANT SECURITY NOTES:
@@ -404,6 +410,22 @@ permalink: /order/
 
     // Initialize Stripe Elements
     function initializeStripe() {
+        // Security check: Only initialize Stripe over HTTPS
+        if (window.location.protocol !== 'https:' && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+            updateStatus('Error: Stripe requires a secure HTTPS connection. Please access this page via HTTPS.', 'error');
+            document.getElementById('card-element-container').style.display = 'none';
+            processPaymentBtn.disabled = true;
+            return;
+        }
+
+        // Check if Stripe is loaded
+        if (typeof Stripe === 'undefined') {
+            updateStatus('Error: Stripe.js failed to load. Please check your internet connection and try again.', 'error');
+            document.getElementById('card-element-container').style.display = 'none';
+            processPaymentBtn.disabled = true;
+            return;
+        }
+
         elements = stripe.elements();
         
         const style = {
@@ -733,9 +755,15 @@ permalink: /order/
 
     // Initialize on page load
     document.addEventListener('DOMContentLoaded', function() {
-        initializeStripe();
-        calculateTotal();
-        updateStatus('Ready to process order. Complete the form and payment details to place your order.', 'info');
+        // Verify HTTPS before initializing
+        if (window.location.protocol === 'https:' || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+            initializeStripe();
+            calculateTotal();
+            updateStatus('Ready to process order. Complete the form and payment details to place your order.', 'info');
+        } else {
+            updateStatus('Error: This page requires a secure HTTPS connection. Redirecting...', 'error');
+            // Redirect will happen via the script at the top of the page
+        }
     });
 </script>
 
