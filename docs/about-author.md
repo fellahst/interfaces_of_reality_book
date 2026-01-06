@@ -12,7 +12,9 @@ subtitle: Stephane Fellah
 
 <div class="content">
     <div class="author-intro">
-        <h2>Stephane Fellah</h2>
+        <div class="author-photo">
+            <img src="{{ '/assets/author-photo.jpg' | relative_url }}" alt="Stephane Fellah" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23667eea\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' font-size=\'60\' font-weight=\'bold\' fill=\'white\' text-anchor=\'middle\' dominant-baseline=\'middle\'%3ESF%3C/text%3E%3C/svg%3E';" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin: 0 auto 20px; display: block; border: 4px solid #667eea; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+        </div>
         <p>Systems architect, researcher, and entrepreneur working at the intersection of artificial intelligence, semantic technologies, geospatial systems, and foundational questions about how reality is structured.</p>
     </div>
 

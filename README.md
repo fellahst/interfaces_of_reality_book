@@ -52,11 +52,11 @@ bundle exec jekyll serve --livereload
 See `DEPLOYMENT.md` for detailed deployment instructions.
 
 Quick steps:
-1. Update `docs/_config.yml` with your GitHub Pages URL
-2. Push this repository to GitHub
-3. Go to Settings > Pages in your GitHub repository
-4. Select the branch (usually `main`) and folder (`/docs` - important!)
-5. GitHub Pages will automatically build and deploy your site
+1. Repository: https://github.com/fellahst/interfaces_of_reality_book
+2. Go to Settings > Pages in your GitHub repository
+3. Select the branch (usually `main`) and folder (`/docs` - important!)
+4. GitHub Pages will automatically build and deploy your site
+5. Your site will be available at: https://fellahst.github.io/interfaces_of_reality_book
 
 ## Project Structure
 

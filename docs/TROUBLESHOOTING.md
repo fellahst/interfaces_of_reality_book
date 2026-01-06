@@ -74,3 +74,4 @@ Visit http://localhost:4000/interfaces_of_reality_book and check if styles work.
 - Check that all files are committed and pushed
 - Wait a few minutes for GitHub Pages to rebuild
 
+

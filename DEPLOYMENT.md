@@ -18,10 +18,12 @@ This guide will help you deploy the "Interfaces of Reality" Jekyll site to GitHu
 Edit `docs/_config.yml` and update these settings:
 
 ```yaml
-# For GitHub Pages with /docs folder:
-url: https://yourusername.github.io
-baseurl: ""  # Keep empty for /docs folder setup
+# For GitHub Pages with /docs folder (project site):
+url: https://fellahst.github.io
+baseurl: /interfaces_of_reality_book  # Your repository name
 ```
+
+**Note:** The repository is already configured at: https://github.com/fellahst/interfaces_of_reality_book
 
 ## Step 3: Push to GitHub
 

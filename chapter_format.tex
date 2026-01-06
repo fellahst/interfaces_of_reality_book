@@ -79,23 +79,26 @@
 \AtBeginDocument{%
   \let\oldmaketitle\maketitle
   \renewcommand{\maketitle}{%
-    % Front cover image - full page, stretch to fill page (no blank page before)
+    % Front cover image - REMOVED for Lulu printing (covers handled separately)
+    % Title page (Page 1 - recto/right page)
     \thispagestyle{empty}
     \pdfbookmark[0]{Title Page}{titlepage}%
     \phantomsection
-    \begin{tikzpicture}[remember picture,overlay]
-      \node[anchor=center,inner sep=0] at (current page.center) {
-        \includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio=false]{assets/front-page.jpg}
-      };
-    \end{tikzpicture}
+    \vspace*{\fill}
+    \begin{center}
+    {\Huge\textbf{Interfaces of Reality}}\\[0.5\baselineskip]
+    {\Large\textit{How Life, Mind, and Machines Navigate a World of Possibilities}}\\[2\baselineskip]
+    
+    {\large Stephane Fellah}
+    \end{center}
+    \vspace*{\fill}
     \newpage
+    
+    % Copyright page (Page 2 - verso/left page)
     \thispagestyle{empty}
     \vspace*{\fill}
     \begin{center}
-    \large
-    \textbf{Interfaces of Reality}\\[0.3\baselineskip]
-    \textit{How Life, Mind, and Machines Navigate a World of Possibilities}\\[1\baselineskip]
-    
+    \small
     Copyright \copyright\ 2025 by Stephane Fellah\\[0.5\baselineskip]
     
     All rights reserved.\\[0.3\baselineskip]
