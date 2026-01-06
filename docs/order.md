@@ -174,6 +174,35 @@ permalink: /order/
     .status-console:empty {
         display: none;
     }
+
+    /* Stripe Elements styling */
+    .StripeElement {
+        box-sizing: border-box;
+        height: 40px;
+        padding: 10px 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: white;
+        transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .StripeElement--focus {
+        border-color: #1976d2;
+        box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.1);
+    }
+
+    .StripeElement--invalid {
+        border-color: #d32f2f;
+    }
+
+    .StripeElement--webkit-autofill {
+        background-color: #fefde5 !important;
+    }
+
+    .payment-loading {
+        opacity: 0.6;
+        pointer-events: none;
+    }
 </style>
 
 <div class="order-container">
@@ -250,20 +279,46 @@ permalink: /order/
             </div>
         </div>
 
-        <!-- Section C: Pay -->
+        <!-- Section C: Payment Summary -->
+        <div class="order-section">
+            <h2>Order Summary</h2>
+            <div id="orderSummary" style="margin-bottom: 20px;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">$0.00</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                    <span>Shipping:</span>
+                    <span id="shippingCost">$0.00</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; font-size: 1.2em; font-weight: 600; padding-top: 12px; border-top: 2px solid #e0e0e0;">
+                    <span>Total:</span>
+                    <span id="total">$0.00</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section D: Pay -->
         <div class="order-section">
             <h2>Payment</h2>
             <p style="color: #666; margin-bottom: 16px;">
-                <strong>Note:</strong> This is a development version. In production, integrate with a payment provider 
-                (Stripe, PayPal, etc.) before enabling real orders. The backend endpoint handles Lulu API authentication 
-                securely—never expose OAuth secrets in browser JavaScript.
+                Secure payment processing powered by Stripe. Your card information is encrypted and never touches our servers.
             </p>
+            
+            <!-- Stripe Card Element Container -->
+            <div id="card-element-container" style="margin-bottom: 20px;">
+                <label style="display: block; margin-bottom: 8px; font-weight: 600; color: #555;">
+                    Card Details <span class="required">*</span>
+                </label>
+                <div id="card-element" style="padding: 12px; border: 1px solid #ccc; border-radius: 4px; background: white;">
+                    <!-- Stripe Elements will create form elements here -->
+                </div>
+                <div id="card-errors" role="alert" style="color: #d32f2f; margin-top: 8px; font-size: 0.9em; min-height: 20px;"></div>
+            </div>
+
             <div class="button-group">
-                <button type="button" id="mockPaymentBtn" class="btn btn-secondary">
-                    Mock Payment Succeeded
-                </button>
-                <button type="submit" id="placeOrderBtn" class="btn btn-primary" disabled>
-                    Place Order
+                <button type="button" id="processPaymentBtn" class="btn btn-primary" disabled>
+                    Pay and Place Order
                 </button>
             </div>
         </div>
@@ -276,6 +331,9 @@ permalink: /order/
     </form>
 </div>
 
+<!-- Stripe.js -->
+<script src="https://js.stripe.com/v3/"></script>
+
 <script>
     // Configuration - REPLACE THESE VALUES BEFORE PRODUCTION
     // 
@@ -285,53 +343,237 @@ permalink: /order/
     // - Client secrets must NEVER be exposed in browser code
     // - This page calls a secure backend endpoint (Cloudflare Worker/serverless function)
     // - The backend handles all Lulu API authentication and communication
-    // - Before production: integrate real payment processing (Stripe, PayPal, etc.)
-    // - Replace pod_package_id values with actual Lulu package IDs from your Lulu account
+    // - Stripe publishable key is safe to expose in browser (only secret key must be server-side)
     const CONFIG = {
         // Your Cloudflare Worker or serverless function endpoint
         createPrintJobEndpoint: "https://YOUR-WORKER.your-subdomain.workers.dev",
+        
+        // Stripe configuration
+        // Get your publishable key from: https://dashboard.stripe.com/apikeys
+        stripePublishableKey: "pk_test_REPLACE_WITH_YOUR_STRIPE_PUBLISHABLE_KEY",
+        
+        // Backend endpoint to create Stripe payment intent
+        // This endpoint should create a PaymentIntent and return { clientSecret: "pi_xxx_secret_xxx" }
+        createPaymentIntentEndpoint: "https://YOUR-WORKER.your-subdomain.workers.dev/create-payment-intent",
         
         // Book metadata
         bookTitle: "REPLACE_WITH_YOUR_BOOK_TITLE",
         
         // PDF URLs - host these on your CDN or static hosting
         interiorPdfUrl: "https://YOUR_HOSTING/interior.pdf",
-        coverPdfUrl: "https://YOUR_HOSTING/cover.pdf"
+        coverPdfUrl: "https://YOUR_HOSTING/cover.pdf",
+        
+        // Pricing (in cents) - UPDATE WITH ACTUAL PRICES
+        pricing: {
+            paperback: {
+                basePrice: 2000, // $20.00 in cents
+                podPackageId: "REPLACE_WITH_POD_PACKAGE_ID_PAPERBACK"
+            },
+            hardcover: {
+                basePrice: 3500, // $35.00 in cents
+                podPackageId: "REPLACE_WITH_POD_PACKAGE_ID_HARDCOVER"
+            }
+        },
+        
+        // Shipping costs (in cents)
+        shipping: {
+            MAIL: 500,    // $5.00
+            PRIORITY: 1000, // $10.00
+            EXPRESS: 2000   // $20.00
+        }
     };
+
+    // Initialize Stripe
+    const stripe = Stripe(CONFIG.stripePublishableKey);
+    let elements;
+    let cardElement;
+    let paymentIntentClientSecret = null;
 
     // State
     let paymentSucceeded = false;
+    let currentOrderTotal = 0;
 
     // DOM elements
     const orderForm = document.getElementById('orderForm');
-    const mockPaymentBtn = document.getElementById('mockPaymentBtn');
-    const placeOrderBtn = document.getElementById('placeOrderBtn');
+    const processPaymentBtn = document.getElementById('processPaymentBtn');
     const statusEl = document.getElementById('status');
+    const subtotalEl = document.getElementById('subtotal');
+    const shippingCostEl = document.getElementById('shippingCost');
+    const totalEl = document.getElementById('total');
+    const cardErrorsEl = document.getElementById('card-errors');
 
-    // Mock payment handler
-    mockPaymentBtn.addEventListener('click', function() {
-        paymentSucceeded = true;
-        placeOrderBtn.disabled = false;
-        updateStatus('Payment status: Mock payment succeeded. You can now place your order.', 'success');
-        mockPaymentBtn.disabled = true;
-        mockPaymentBtn.textContent = 'Payment Confirmed';
-    });
+    // Initialize Stripe Elements
+    function initializeStripe() {
+        elements = stripe.elements();
+        
+        const style = {
+            base: {
+                color: '#32325d',
+                fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
+                fontSmoothing: 'antialiased',
+                fontSize: '16px',
+                '::placeholder': {
+                    color: '#aab7c4'
+                }
+            },
+            invalid: {
+                color: '#d32f2f',
+                iconColor: '#d32f2f'
+            }
+        };
 
-    // Form submission handler
-    orderForm.addEventListener('submit', async function(e) {
-        e.preventDefault();
+        cardElement = elements.create('card', { style: style });
+        cardElement.mount('#card-element');
 
-        // Validate payment
-        if (!paymentSucceeded) {
-            updateStatus('Error: Payment must be completed before placing order.', 'error');
+        // Handle real-time validation errors from the card Element
+        cardElement.on('change', function(event) {
+            if (event.error) {
+                cardErrorsEl.textContent = event.error.message;
+            } else {
+                cardErrorsEl.textContent = '';
+            }
+        });
+    }
+
+    // Calculate order total
+    function calculateTotal() {
+        const format = document.getElementById('format').value;
+        const qty = parseInt(document.getElementById('qty').value, 10) || 0;
+        const shippingLevel = document.getElementById('shipping_level').value;
+
+        if (!format || qty === 0 || !shippingLevel) {
+            subtotalEl.textContent = '$0.00';
+            shippingCostEl.textContent = '$0.00';
+            totalEl.textContent = '$0.00';
+            currentOrderTotal = 0;
+            processPaymentBtn.disabled = true;
             return;
         }
 
-        // Validate form
-        if (!orderForm.checkValidity()) {
-            orderForm.reportValidity();
-            return;
+        // Get base price
+        const formatKey = format === CONFIG.pricing.paperback.podPackageId ? 'paperback' : 'hardcover';
+        const basePrice = CONFIG.pricing[formatKey]?.basePrice || 0;
+        const shippingCost = CONFIG.shipping[shippingLevel] || 0;
+
+        const subtotal = basePrice * qty;
+        const total = subtotal + shippingCost;
+
+        subtotalEl.textContent = formatCurrency(subtotal);
+        shippingCostEl.textContent = formatCurrency(shippingCost);
+        totalEl.textContent = formatCurrency(total);
+        currentOrderTotal = total;
+
+        // Enable payment button if form is valid
+        if (orderForm.checkValidity()) {
+            processPaymentBtn.disabled = false;
         }
+    }
+
+    // Format currency (cents to dollars)
+    function formatCurrency(cents) {
+        return '$' + (cents / 100).toFixed(2);
+    }
+
+    // Create payment intent
+    async function createPaymentIntent() {
+        try {
+            updateStatus('Creating payment intent...', 'info');
+            
+            const response = await fetch(CONFIG.createPaymentIntentEndpoint, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    amount: currentOrderTotal,
+                    currency: 'usd',
+                    metadata: {
+                        order_type: 'book_print'
+                    }
+                })
+            });
+
+            if (!response.ok) {
+                throw new Error(`Failed to create payment intent: ${response.statusText}`);
+            }
+
+            const data = await response.json();
+            paymentIntentClientSecret = data.clientSecret;
+            
+            updateStatus('Payment intent created. Ready to process payment.', 'success');
+            return true;
+        } catch (error) {
+            updateStatus('Error creating payment intent: ' + error.message, 'error');
+            return false;
+        }
+    }
+
+    // Process payment
+    async function processPayment() {
+        if (!paymentIntentClientSecret) {
+            const created = await createPaymentIntent();
+            if (!created) {
+                return false;
+            }
+        }
+
+        try {
+            processPaymentBtn.disabled = true;
+            processPaymentBtn.textContent = 'Processing Payment...';
+            orderForm.classList.add('payment-loading');
+
+            updateStatus('Processing payment with Stripe...', 'info');
+
+            const { error, paymentIntent } = await stripe.confirmCardPayment(
+                paymentIntentClientSecret,
+                {
+                    payment_method: {
+                        card: cardElement,
+                        billing_details: {
+                            name: document.getElementById('name').value,
+                            email: document.getElementById('email').value,
+                            phone: document.getElementById('phone').value,
+                            address: {
+                                line1: document.getElementById('street1').value,
+                                line2: document.getElementById('street2').value || undefined,
+                                city: document.getElementById('city').value,
+                                state: document.getElementById('state').value,
+                                postal_code: document.getElementById('postcode').value,
+                                country: document.getElementById('country').value.toUpperCase()
+                            }
+                        }
+                    }
+                }
+            );
+
+            if (error) {
+                updateStatus('Payment failed: ' + error.message, 'error');
+                cardErrorsEl.textContent = error.message;
+                processPaymentBtn.disabled = false;
+                processPaymentBtn.textContent = 'Pay and Place Order';
+                orderForm.classList.remove('payment-loading');
+                return false;
+            }
+
+            if (paymentIntent.status === 'succeeded') {
+                paymentSucceeded = true;
+                updateStatus('Payment succeeded! Submitting order...', 'success');
+                await submitOrder(paymentIntent.id);
+                return true;
+            }
+
+            return false;
+        } catch (error) {
+            updateStatus('Error processing payment: ' + error.message, 'error');
+            processPaymentBtn.disabled = false;
+            processPaymentBtn.textContent = 'Pay and Place Order';
+            orderForm.classList.remove('payment-loading');
+            return false;
+        }
+    }
+
+    // Submit order to backend
+    async function submitOrder(paymentIntentId) {
 
         // Get form values
         const format = document.getElementById('format').value;
@@ -367,6 +609,7 @@ permalink: /order/
         // Construct payload
         const payload = {
             order_id: orderId,
+            payment_intent_id: paymentIntentId,
             contact_email: email,
             pod_package_id: format,
             quantity: qty,
@@ -386,9 +629,6 @@ permalink: /order/
             cover_source_url: CONFIG.coverPdfUrl
         };
 
-        // Show loading state
-        placeOrderBtn.disabled = true;
-        placeOrderBtn.textContent = 'Processing...';
         updateStatus('Sending order request to backend...\n\nPayload:\n' + JSON.stringify(payload, null, 2), 'info');
 
         try {
@@ -416,25 +656,71 @@ permalink: /order/
                     'Order submitted successfully!\n\nResponse:\n' + JSON.stringify(responseData, null, 2),
                     'success'
                 );
-                // Optionally reset form or redirect
-                // orderForm.reset();
-                // paymentSucceeded = false;
-                // placeOrderBtn.disabled = true;
+                // Reset form after successful order
+                orderForm.reset();
+                paymentSucceeded = false;
+                paymentIntentClientSecret = null;
+                processPaymentBtn.disabled = true;
+                orderForm.classList.remove('payment-loading');
+                calculateTotal();
             } else {
                 updateStatus(
                     `Error: Order submission failed (${response.status} ${response.statusText})\n\nResponse:\n` + 
                     (typeof responseData === 'string' ? responseData : JSON.stringify(responseData, null, 2)),
                     'error'
                 );
+                processPaymentBtn.disabled = false;
+                processPaymentBtn.textContent = 'Pay and Place Order';
+                orderForm.classList.remove('payment-loading');
             }
         } catch (error) {
             updateStatus(
                 'Error: Failed to submit order\n\n' + error.message + '\n\n' + error.stack,
                 'error'
             );
-        } finally {
-            placeOrderBtn.disabled = false;
-            placeOrderBtn.textContent = 'Place Order';
+            processPaymentBtn.disabled = false;
+            processPaymentBtn.textContent = 'Pay and Place Order';
+            orderForm.classList.remove('payment-loading');
+        }
+    }
+
+    // Payment button handler
+    processPaymentBtn.addEventListener('click', async function(e) {
+        e.preventDefault();
+
+        // Validate form
+        if (!orderForm.checkValidity()) {
+            orderForm.reportValidity();
+            return;
+        }
+
+        // Validate Stripe card element
+        const { error: cardError } = await stripe.createPaymentMethod({
+            type: 'card',
+            card: cardElement
+        });
+
+        if (cardError) {
+            cardErrorsEl.textContent = cardError.message;
+            updateStatus('Error: ' + cardError.message, 'error');
+            return;
+        }
+
+        // Process payment
+        await processPayment();
+    });
+
+    // Form field change listeners for total calculation
+    document.getElementById('format').addEventListener('change', calculateTotal);
+    document.getElementById('qty').addEventListener('input', calculateTotal);
+    document.getElementById('shipping_level').addEventListener('change', calculateTotal);
+
+    // Form validation listener
+    orderForm.addEventListener('input', function() {
+        if (orderForm.checkValidity() && currentOrderTotal > 0) {
+            processPaymentBtn.disabled = false;
+        } else {
+            processPaymentBtn.disabled = true;
         }
     });
 
@@ -445,7 +731,11 @@ permalink: /order/
         statusEl.scrollTop = statusEl.scrollHeight;
     }
 
-    // Initial status message
-    updateStatus('Ready to process order. Complete the form and click "Mock Payment Succeeded" to enable ordering.', 'info');
+    // Initialize on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        initializeStripe();
+        calculateTotal();
+        updateStatus('Ready to process order. Complete the form and payment details to place your order.', 'info');
+    });
 </script>
 
