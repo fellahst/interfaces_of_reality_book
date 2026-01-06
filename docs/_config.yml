@@ -38,4 +38,6 @@ navigation:
     url: /about-author.html
   - title: Get the Book
     url: /get-the-book.html
+  - title: Order
+    url: /order/
 
