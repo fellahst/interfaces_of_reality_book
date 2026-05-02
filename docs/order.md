@@ -7,7 +7,7 @@ permalink: /order/
 <div class="page-header">
     <h1>Order the book</h1>
     <p style="color: #666; font-size: 1.1em; margin-top: 10px;">
-        The paperback is available on <strong>Amazon</strong>. Use the link below for the fastest checkout and shipping options in your region.
+        The paperback is available on <strong>Amazon</strong> and on <strong>Lulu.com</strong>. Use either link below for checkout.
         The form further down is an optional path for direct print-on-demand ordering through this site once your backend is configured (Stripe and a secure worker).
     </p>
 </div>
@@ -206,11 +206,11 @@ permalink: /order/
 
 <div class="order-container">
     <div class="order-section">
-        <h2>Buy on Amazon</h2>
+        <h2>Buy the paperback</h2>
         <p style="color: #555; margin-bottom: 20px; line-height: 1.6;">
-            <em>Interfaces of Reality</em> (paperback, English) is in stock on Amazon. ISBN-13: <strong>978-1105833892</strong>.
+            <em>Interfaces of Reality</em> (paperback, English). ISBN-13: <strong>978-1105833892</strong>.
         </p>
-        <p style="margin-bottom: 24px;">
+        <div class="buy-buttons" style="justify-content: flex-start;">
             <a href="https://a.co/d/0hU5Ff4j"
                target="_blank"
                rel="noopener noreferrer"
@@ -220,9 +220,19 @@ permalink: /order/
                 </svg>
                 <span>Buy on Amazon</span>
             </a>
-        </p>
-        <p style="color: #666; font-size: 0.95em; margin: 0;">
-            Opens the product page in a new tab: <a href="https://a.co/d/0hU5Ff4j" target="_blank" rel="noopener noreferrer">https://a.co/d/0hU5Ff4j</a>
+            <a href="https://www.lulu.com/shop/stephane-fellah/interfaces-of-reality/paperback/product-gj96my5.html"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="lulu-button">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/>
+                </svg>
+                <span>Buy on Lulu</span>
+            </a>
+        </div>
+        <p style="color: #666; font-size: 0.95em; margin: 16px 0 0;">
+            Amazon: <a href="https://a.co/d/0hU5Ff4j" target="_blank" rel="noopener noreferrer">https://a.co/d/0hU5Ff4j</a><br>
+            Lulu.com: <a href="https://www.lulu.com/shop/stephane-fellah/interfaces-of-reality/paperback/product-gj96my5.html" target="_blank" rel="noopener noreferrer">paperback listing</a>
         </p>
     </div>
 

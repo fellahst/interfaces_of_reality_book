@@ -18,21 +18,28 @@ permalink: /get-the-book.html
             
             <h2 style="color: var(--primary-color); margin-bottom: 20px; font-size: 2em;">Interfaces of Reality</h2>
             <p style="font-size: 1.2em; color: #666; margin-bottom: 10px;"><strong>How Life, Mind, and Machines Navigate a World of Possibilities</strong></p>
-            <p style="font-size: 1.1em; color: #888; margin-bottom: 40px;">by {{ site.author }}</p>
-            
+            <p style="font-size: 1.1em; color: #888; margin-bottom: 24px;">by {{ site.author }}</p>
+
+            <div class="buy-buttons">
             <a href="https://a.co/d/0hU5Ff4j"
                target="_blank"
                rel="noopener noreferrer"
                class="amazon-button">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                     <path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L21.7 4H5.21l-.94-2H1zm16 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
                 </svg>
                 <span>Buy on Amazon</span>
             </a>
-            
-            <p style="margin-top: 30px; color: #666; font-size: 0.95em;">
-                Also available at your local bookstore
-            </p>
+            <a href="https://www.lulu.com/shop/stephane-fellah/interfaces-of-reality/paperback/product-gj96my5.html"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="lulu-button">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/>
+                </svg>
+                <span>Buy on Lulu</span>
+            </a>
+            </div>
         </div>
     </div>
     

@@ -4,19 +4,37 @@ title: Interfaces of Reality
 subtitle: How Life, Mind, and Machines Navigate a World of Possibilities
 ---
 
-<div class="page-header">
-    <h1>{{ page.title }}</h1>
-    <div class="subtitle">{{ page.subtitle }}</div>
-    <div class="author">by {{ site.author }}</div>
-</div>
+<div class="home">
+    <header class="page-header page-header--home">
+        <h1>{{ page.title }}</h1>
+        <div class="subtitle">{{ page.subtitle }}</div>
+        <div class="author">by {{ site.author }}</div>
+    </header>
 
-<div class="intro">
-    <p>Reality organizes itself through interfaces, boundaries that constrain interaction while enabling coordination. These interfaces stack hierarchically, each layer building upon the ones below, creating new possibilities through accumulation rather than replacement.</p>
-    <img src="{{ '/assets/interface_stack.jpg' | relative_url }}" alt="The Complete Interface Stack" style="width: 100%; max-width: 900px; margin: 30px auto; display: block; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-    <p style="margin-top: 20px;"><strong>Explore each layer of the hierarchy stack:</strong></p>
-</div>
+    <section class="home-intro" aria-labelledby="home-lead-heading">
+        <div class="home-intro-inner">
+            <div class="home-intro-text">
+                <h2 id="home-lead-heading" class="home-lead-heading">Reality is structured by boundaries</h2>
+                <p class="home-lead">Reality organizes itself through <strong>interfaces</strong>: boundaries that constrain interaction while enabling coordination. These interfaces stack hierarchically—each layer builds on those below—so new behavior emerges through accumulated constraints, not by replacing what came before.</p>
+                <div class="home-cta">
+                    <a href="{{ '/get-the-book.html' | relative_url }}" class="btn-home btn-home--primary">Get the book</a>
+                    <a href="{{ '/order/' | relative_url }}" class="btn-home btn-home--secondary">Order</a>
+                </div>
+            </div>
+            <div class="home-intro-media">
+                <figure class="home-figure">
+                    <img src="{{ '/assets/interface_stack.jpg' | relative_url }}" alt="Diagram: the complete interface stack from physics to technology" width="900" loading="eager">
+                    <figcaption>The complete interface stack</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
 
-<div class="layers-grid">
+    <section class="layers-section" aria-labelledby="layers-heading">
+        <h2 id="layers-heading" class="layers-section-title">Explore each layer</h2>
+        <p class="layers-section-lead">Nine stops from the foundations of physics to consciously designed systems. Each page is a short guided tour—open any card to go deeper.</p>
+
+        <div class="layers-grid">
     <a href="{{ '/layer-01-physical.html' | relative_url }}" class="layer-card">
         <div class="layer-card-header layer-01">
             <div class="layer-number">Layer 1</div>
@@ -104,7 +122,7 @@ subtitle: How Life, Mind, and Machines Navigate a World of Possibilities
         </div>
         <div class="layer-card-content">
             <p><strong>Creating Intelligence and Selves</strong></p>
-            <p>Predictive models, attention mechanisms, and inferential processes. Creates intelligence and the self.</p>
+            <p>Predictive models, Markov blankets, and inferential processes. Creates intelligence and the self.</p>
             <ul class="key-points">
                 <li>Markov blankets</li>
                 <li>Predictive models</li>
@@ -160,5 +178,6 @@ subtitle: How Life, Mind, and Machines Navigate a World of Possibilities
             </ul>
         </div>
     </a>
+        </div>
+    </section>
 </div>
-

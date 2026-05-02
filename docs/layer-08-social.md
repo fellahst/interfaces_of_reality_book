@@ -16,51 +16,47 @@ position: Built on Semantic Interfaces - Coordinates behavior and enables cooper
 <div class="layer-info">
     <h2>Layer {{ page.layer }}: {{ page.layer_name }}</h2>
     <div class="position">{{ page.position }}</div>
-    <p>Social interfaces coordinate behavior across individuals. They include norms, institutions, and legal frameworks that shape how people can interact while preserving social coherence. These interfaces create the conditions for cooperation and collective action.</p>
+    <p>Above shared meaning sits something larger: the interfaces that let <strong>many people</strong> act together without sharing one mind. Norms, institutions, and law are not “soft” topics—they are the boundaries that make cooperation, dispute, and reform possible at scale.</p>
 </div>
 
 <div class="content">
     <div class="section">
-        <h3>Norms as Interfaces</h3>
-        <p>Social norms are interfaces that constrain how individuals can interact. They are not just rules or conventions; they are boundaries that make coordinated behavior possible. Norms create expectations, enable prediction, and allow people to coordinate their actions without explicit communication.</p>
+        <h3>Norms as interfaces</h3>
+        <p>Norms shape what feels obvious before anyone reads a rulebook. They narrow how disagreement can happen while still allowing disagreement—<strong>bounded negotiation</strong> instead of chaos or silence.</p>
         <img src="{{ '/assets/semantic_negotiated_constraint.jpg' | relative_url }}" alt="Semantics as Negotiated Constraint" style="width: 100%; max-width: 800px; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-        <p>As shown above, this shows how social norms work as negotiated constraints. Like semantic interfaces, social interfaces create boundaries within which disagreement and variation can occur. The boundary itself defines what counts as valid behavior, argument, or evidence. People can disagree about specific issues while respecting the same boundary rules. This bounded disagreement enables coordination, the interface constrains disagreement without eliminating it, creating the conditions for productive social interaction.</p>
+        <p>The same logic applies in courtrooms and markets: the interface is not “everyone agrees,” it is “everyone knows what kind of argument counts.” That is how coordination survives real conflict.</p>
         <div class="quote">"Social interfaces coordinate behavior across individuals while preserving social coherence."</div>
     </div>
 
     <div class="section">
-        <h3>Institutions as Stabilizing Structures</h3>
-        <p>Institutions are formalized social interfaces. They include legal systems, economic structures, educational systems, and political organizations. Like biological membranes, institutions create boundaries that maintain coherence while allowing exchange.</p>
+        <h3>Institutions that endure</h3>
+        <p>Institutions are <strong>formalized</strong> social interfaces—law, money, education, governance. They work when a small set of commitments stays legible while everything else is allowed to move.</p>
         <img src="{{ '/assets/ontology_living_interface.jpg' | relative_url }}" alt="Ontology as Living Interface Lifecycle" style="width: 100%; max-width: 800px; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-        <p>As shown above, institutions behave like living interfaces: a stable core of commitments (what must stay recognizable for coordination to work) with room for extension and adaptation as pressures change. The diagram mirrors how formal systems evolve without collapsing, the same pattern as ontologies that preserve identity while their details move.</p>
-        <p>Institutions stabilize social interfaces, making them more robust and persistent. They create the conditions for large-scale cooperation and collective action that would be impossible without them.</p>
+        <p>Reforming an institution is often <strong>interface redesign</strong>: not swapping authority for its own sake, but repairing which distinctions matter so the system can coordinate again.</p>
     </div>
 
     <div class="section">
-        <h3>Legal Frameworks</h3>
-        <p>Legal systems create shared worlds through semantic interfaces, the constraints of legal language, the norms of procedure, the standards of evidence, the traditions of interpretation. These interfaces create the conditions under which legal decisions can be made, justified, and enforced.</p>
+        <h3>Law, power, adaptation</h3>
+        <p>Legal and bureaucratic categories do not merely describe people and events—they steer them. <strong>Power flows along interfaces</strong>: whoever controls definitions, defaults, and procedures shapes what is easy, what is costly, and what disappears from view.</p>
         <img src="{{ '/assets/ontology_and_power.jpg' | relative_url }}" alt="Ontologies and Power" style="width: 100%; max-width: 800px; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-        <p>As shown above, this shows how legal frameworks, as semantic interfaces, shape behavior by deciding which distinctions matter. Classification systems demonstrate how different ontologies create different categories that influence behavior. Legal interfaces don't just describe the world, they shape it by creating the boundaries that determine what counts as valid argument, evidence, or precedent. These interfaces coordinate interpretation while also exercising power by determining which distinctions matter.</p>
-        <p>A lawyer in the United States and a lawyer in the United Kingdom can understand each other's legal reasoning because they share similar semantic interfaces, even though their specific laws differ. The interfaces coordinate interpretation across jurisdictions, enabling international legal cooperation.</p>
+        <p>Different classification schemes produce different futures. Good social design makes that power visible and accountable—especially when the interface feels “natural.”</p>
         <img src="{{ '/assets/stability_under_change.jpg' | relative_url }}" alt="Stability Under Change" style="width: 100%; max-width: 800px; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-        <p>As shown above, this shows how social interfaces can maintain stability even as they evolve. Legal systems, like all good interfaces, must be stable enough to enable coordination while flexible enough to adapt to changing circumstances. The interface maintains coherence by constraining how change can occur, ensuring that evolution remains compatible with existing structures. This stability under change is what enables institutions to persist and function effectively over time.</p>
+        <p>Finally, societies need <strong>stability without rigidity</strong>: enough continuity that trust can form, enough flexibility that the interface can learn. That balance is the difference between a living culture and a brittle script.</p>
     </div>
 
     <div class="key-concepts">
-        <h4>Key Concepts</h4>
+        <h4>Key ideas</h4>
         <ul>
-            <li><strong>Social Norms:</strong> Interfaces that constrain individual interaction</li>
-            <li><strong>Institutions:</strong> Formalized social interfaces</li>
-            <li><strong>Legal Frameworks:</strong> Semantic interfaces for justice and order</li>
-            <li><strong>Cooperation:</strong> Coordinated behavior enabled by social interfaces</li>
-            <li><strong>Collective Action:</strong> Large-scale coordination through interfaces</li>
-            <li><strong>Social Coherence:</strong> Stability maintained by social boundaries</li>
+            <li><strong>Bounded disagreement:</strong> coordination without unanimity</li>
+            <li><strong>Institutions:</strong> formal interfaces for many-to-many life</li>
+            <li><strong>Power along interfaces:</strong> who sets defaults and categories</li>
+            <li><strong>Reform as redesign:</strong> fix the boundary, not only the slogan</li>
+            <li><strong>Stability under change:</strong> identity for the whole while parts move</li>
         </ul>
     </div>
 
     <div class="section">
-        <h3>Building on Semantic Interfaces</h3>
-        <p>Social interfaces build upon semantic interfaces. They rely on the shared meaning and communication established at the semantic level, but add the ability to coordinate behavior across many individuals, enabling cooperation, institutions, and collective action at scales that would be impossible without these interfaces.</p>
+        <h3>Built on meaning</h3>
+        <p>Social interfaces inherit everything below them: physics, life, sensorimotor loops, inference, and <strong>shared meaning</strong>. What is new at this layer is scale—millions of strangers coordinating through boundaries they did not personally invent, yet still depend on.</p>
     </div>
 </div>
-
