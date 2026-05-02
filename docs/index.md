@@ -12,11 +12,10 @@ subtitle: How Life, Mind, and Machines Navigate a World of Possibilities
     </header>
 
     <section id="book-overview" class="home-video-section" aria-labelledby="home-video-heading">
-        <div class="home-video-inner">
-            <h2 id="home-video-heading" class="home-video-title">Book overview</h2>
-            <p class="home-video-intro">
-                <a href="{{ site.youtube_channel_url }}" target="_blank" rel="noopener noreferrer">Interfaces of Reality on YouTube</a>
-                <span class="home-video-handle">{{ site.youtube_channel_handle }}</span>
+        <div class="video-block">
+            <h2 id="home-video-heading" class="video-block-title">Book overview</h2>
+            <p class="video-block-intro">
+                More on <a href="{{ site.youtube_channel_url }}" target="_blank" rel="noopener noreferrer">YouTube</a> <span class="video-block-handle">{{ site.youtube_channel_handle }}</span>.
             </p>
             <div class="youtube-embed-wrap">
                 <iframe src="https://www.youtube-nocookie.com/embed/{{ site.youtube_book_overview_id }}"
@@ -26,11 +25,6 @@ subtitle: How Life, Mind, and Machines Navigate a World of Possibilities
                         allowfullscreen
                         loading="eager"></iframe>
             </div>
-            <p class="home-video-foot">
-                <a href="{{ '/get-the-book.html' | relative_url }}">Get the book</a>
-                <span aria-hidden="true"> · </span>
-                <a href="{{ site.youtube_channel_url }}" target="_blank" rel="noopener noreferrer">YouTube channel</a>
-            </p>
         </div>
     </section>
 

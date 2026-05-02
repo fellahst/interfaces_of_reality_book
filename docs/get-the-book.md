@@ -44,18 +44,21 @@ permalink: /get-the-book.html
     </div>
 
     <section class="get-book-video" aria-labelledby="book-overview-heading">
-        <h2 id="book-overview-heading">Book overview</h2>
-        <p class="get-book-channel-line">
-            <strong>Interfaces of Reality</strong> on YouTube — {{ site.youtube_channel_handle }}.
-            Channel: <a href="{{ site.youtube_channel_url }}" target="_blank" rel="noopener noreferrer">{{ site.youtube_channel_url }}</a>
-        </p>
-        <div class="youtube-embed-wrap">
-            <iframe src="https://www.youtube-nocookie.com/embed/{{ site.youtube_book_overview_id }}"
-                    title="Book overview: Interfaces of Reality"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen
-                    loading="lazy"></iframe>
+        <div class="video-block">
+            <h2 id="book-overview-heading" class="video-block-title">Book overview</h2>
+            <p class="video-block-intro">
+                <strong>Interfaces of Reality</strong> on YouTube
+                <span class="video-block-handle">{{ site.youtube_channel_handle }}</span>.
+                Channel: <a href="{{ site.youtube_channel_url }}" target="_blank" rel="noopener noreferrer">{{ site.youtube_channel_url }}</a>
+            </p>
+            <div class="youtube-embed-wrap">
+                <iframe src="https://www.youtube-nocookie.com/embed/{{ site.youtube_book_overview_id }}"
+                        title="Book overview: Interfaces of Reality"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                        loading="lazy"></iframe>
+            </div>
         </div>
     </section>
     

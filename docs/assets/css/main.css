@@ -607,29 +607,71 @@ body {
     font-weight: 600;
 }
 
-/* Get the book: YouTube overview */
+/* Book overview video — shared card (home + get-the-book), matches .home-figure / layer cards */
+.home-video-section {
+    padding: clamp(1.5rem, 3vw, 2.25rem) clamp(1.25rem, 3vw, 2rem);
+    background: transparent;
+    scroll-margin-top: 6rem;
+}
+
 .get-book-video {
-    max-width: 800px;
-    margin: 2.5rem auto 0;
-    padding: 0 20px;
+    max-width: min(960px, 100%);
+    margin: clamp(1.75rem, 4vw, 2.5rem) auto 0;
+    padding: 0 clamp(1rem, 2vw, 1.5rem);
+}
+
+.video-block {
+    max-width: min(900px, 100%);
+    margin: 0 auto;
+    padding: clamp(1.35rem, 2.8vw, 1.85rem);
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 12px 40px rgba(15, 23, 42, 0.12), 0 0 0 1px rgba(15, 23, 42, 0.06);
+    border: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.video-block-title {
+    font-family: Georgia, 'Times New Roman', serif;
     text-align: center;
+    font-size: clamp(1.35rem, 2.8vw, 1.75rem);
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 0.65rem;
+    border: none;
+    padding: 0;
 }
 
-.get-book-video h2 {
-    color: var(--primary-color);
-    font-size: 1.75em;
-    margin: 0 0 0.75rem;
-}
-
-.get-book-channel-line {
-    margin: 0 0 1.25rem;
-    font-size: 1.05em;
+.video-block-intro {
+    text-align: center;
+    margin: 0 auto 1.15rem;
+    max-width: 38rem;
+    font-size: clamp(0.98rem, 1.6vw, 1.08rem);
     line-height: 1.65;
-    color: #475569;
+    color: #64748b;
     overflow-wrap: anywhere;
 }
 
-.get-book-channel-line a {
+.video-block-intro a {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.video-block-handle {
+    display: inline-block;
+    margin-left: 0.35rem;
+    color: #64748b;
+    font-weight: 600;
+}
+
+.video-block-foot {
+    text-align: center;
+    margin: 1.15rem 0 0;
+    padding-top: 0.25rem;
+    font-size: 1em;
+    color: #64748b;
+}
+
+.video-block-foot a {
     font-weight: 600;
     color: var(--primary-color);
 }
@@ -640,10 +682,10 @@ body {
     max-width: 720px;
     margin: 0 auto;
     aspect-ratio: 16 / 9;
-    border-radius: 8px;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
     background: #0f172a;
+    box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.1);
 }
 
 .youtube-embed-wrap iframe {
@@ -652,56 +694,6 @@ body {
     width: 100%;
     height: 100%;
     border: 0;
-}
-
-/* Home: book overview video */
-.home-video-section {
-    background: linear-gradient(180deg, #f8f9fc 0%, #eef1f8 100%);
-    border-top: 1px solid rgba(102, 126, 234, 0.12);
-    border-bottom: 1px solid rgba(102, 126, 234, 0.12);
-    padding: clamp(2rem, 5vw, 3rem) clamp(1.25rem, 3vw, 2rem);
-    scroll-margin-top: 6rem;
-}
-
-.home-video-inner {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.home-video-title {
-    color: var(--primary-color);
-    font-size: clamp(1.35rem, 3vw, 1.75rem);
-    margin: 0 0 0.5rem;
-}
-
-.home-video-intro {
-    margin: 0 0 1.25rem;
-    font-size: 1.05em;
-    color: #475569;
-    line-height: 1.5;
-}
-
-.home-video-intro a {
-    font-weight: 600;
-    color: var(--primary-color);
-}
-
-.home-video-handle {
-    display: inline-block;
-    margin-left: 0.35rem;
-    color: #64748b;
-    font-weight: 600;
-}
-
-.home-video-foot {
-    margin: 1.25rem 0 0;
-    font-size: 1em;
-}
-
-.home-video-foot a {
-    font-weight: 600;
-    color: var(--primary-color);
 }
 
 /* Footer */
