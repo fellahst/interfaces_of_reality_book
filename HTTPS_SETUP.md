@@ -78,9 +78,9 @@ Once the certificate is ready:
 
 ### Step 5: Verify HTTPS Works
 
-1. Visit `https://www.interfacesofreality.com/order/`
+1. Visit `https://www.interfacesofreality.com/order/` (redirects to Get the book) or `/get-the-book.html`
 2. Check browser address bar shows 🔒 (lock icon)
-3. Test Stripe payment form loads without errors
+3. Confirm the page loads over HTTPS without mixed-content warnings
 
 ## Troubleshooting
 
@@ -144,10 +144,8 @@ bundle exec jekyll serve
 
 ## Security Features Added
 
-1. **HTTPS Redirect**: Automatically redirects HTTP to HTTPS
-2. **Stripe Security Check**: Verifies HTTPS before initializing Stripe
-3. **Content Security Policy**: Upgrades insecure requests to HTTPS
-4. **Error Handling**: Clear error messages if HTTPS is not available
+1. **HTTPS redirect**: Layout script redirects HTTP to HTTPS (except on localhost).
+2. **Content Security Policy**: `upgrade-insecure-requests` in the default layout.
 
 ## Verification Checklist
 
@@ -157,7 +155,6 @@ bundle exec jekyll serve
 - [ ] "Enforce HTTPS" checkbox enabled
 - [ ] Site accessible via `https://www.interfacesofreality.com`
 - [ ] Order page loads without HTTPS errors
-- [ ] Stripe payment form initializes correctly
 - [ ] Browser shows 🔒 lock icon in address bar
 
 ## Hostinger-Specific Checklist

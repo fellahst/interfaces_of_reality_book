@@ -1,8 +1,10 @@
 # Stripe Payment Integration
 
+**Note:** The URL `/order/` now redirects to **Get the book** (`/get-the-book.html`) so there is a single purchase entry point. An older in-browser Stripe + print-job demo used to live on the order page; recover it from git history for `docs/order.md` if needed.
+
 ## Overview
 
-The order page (`docs/order.md`) has been integrated with Stripe for secure payment processing. The integration uses Stripe Elements for PCI-compliant card input and Payment Intents for secure payment processing.
+The following described an optional self-hosted checkout flow (Stripe Elements, Payment Intents, and a backend worker). It is not present on the live order page today.
 
 ## Frontend Implementation
 
@@ -15,7 +17,7 @@ The order page (`docs/order.md`) has been integrated with Stripe for secure paym
 
 ### Configuration Required
 
-Update these values in `docs/order.md`:
+When you host the checkout UI yourself (for example by restoring the old `docs/order.md` from git), configure the JavaScript constants that were embedded in that page, for example:
 
 1. **Stripe Publishable Key**: 
    ```javascript

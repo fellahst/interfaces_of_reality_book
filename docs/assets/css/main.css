@@ -575,6 +575,20 @@ body {
     margin: 0 auto;
 }
 
+/* About the author: readable bio layout */
+.about-author .section p {
+    text-align: left;
+}
+
+.about-author-lede {
+    font-size: 1.15em;
+    line-height: 1.65;
+    color: #334155;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Footer */
 .site-footer {
     background: rgba(255, 255, 255, 0.95);

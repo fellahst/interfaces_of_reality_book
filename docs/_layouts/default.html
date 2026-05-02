@@ -6,6 +6,10 @@
     <!-- Enforce HTTPS for security -->
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    {% if page.redirect_to %}
+    <link rel="canonical" href="{{ page.redirect_to | absolute_url }}">
+    <meta http-equiv="refresh" content="0; url={{ page.redirect_to | absolute_url }}">
+    {% endif %}
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
     <!-- Redirect HTTP to HTTPS -->
     <script>
