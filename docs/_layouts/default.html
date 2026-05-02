@@ -29,6 +29,9 @@
         <div class="footer-content">
             <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author }}. All rights reserved.</p>
             <p><em>{{ site.title }}</em> - {{ site.description }}</p>
+            {% if site.youtube_channel_url %}
+            <p class="footer-youtube"><a href="{{ site.youtube_channel_url }}" target="_blank" rel="noopener noreferrer">Interfaces of Reality on YouTube</a> <span class="footer-youtube-handle">{{ site.youtube_channel_handle }}</span></p>
+            {% endif %}
         </div>
     </footer>
 </body>

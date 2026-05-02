@@ -589,6 +589,121 @@ body {
     margin-right: auto;
 }
 
+.about-author .author-contact {
+    margin-top: 0.5rem;
+    padding: 1.25rem 1.5rem;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    max-width: 40rem;
+}
+
+.about-author .author-contact p {
+    margin-bottom: 0;
+}
+
+.about-author .author-contact a {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Get the book: YouTube overview */
+.get-book-video {
+    max-width: 800px;
+    margin: 2.5rem auto 0;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.get-book-video h2 {
+    color: var(--primary-color);
+    font-size: 1.75em;
+    margin: 0 0 0.75rem;
+}
+
+.get-book-channel-line {
+    margin: 0 0 1.25rem;
+    font-size: 1.05em;
+    line-height: 1.65;
+    color: #475569;
+    overflow-wrap: anywhere;
+}
+
+.get-book-channel-line a {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.youtube-embed-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+    background: #0f172a;
+}
+
+.youtube-embed-wrap iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Home: book overview video */
+.home-video-section {
+    background: linear-gradient(180deg, #f8f9fc 0%, #eef1f8 100%);
+    border-top: 1px solid rgba(102, 126, 234, 0.12);
+    border-bottom: 1px solid rgba(102, 126, 234, 0.12);
+    padding: clamp(2rem, 5vw, 3rem) clamp(1.25rem, 3vw, 2rem);
+    scroll-margin-top: 6rem;
+}
+
+.home-video-inner {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.home-video-title {
+    color: var(--primary-color);
+    font-size: clamp(1.35rem, 3vw, 1.75rem);
+    margin: 0 0 0.5rem;
+}
+
+.home-video-intro {
+    margin: 0 0 1.25rem;
+    font-size: 1.05em;
+    color: #475569;
+    line-height: 1.5;
+}
+
+.home-video-intro a {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.home-video-handle {
+    display: inline-block;
+    margin-left: 0.35rem;
+    color: #64748b;
+    font-weight: 600;
+}
+
+.home-video-foot {
+    margin: 1.25rem 0 0;
+    font-size: 1em;
+}
+
+.home-video-foot a {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
 /* Footer */
 .site-footer {
     background: rgba(255, 255, 255, 0.95);
@@ -603,6 +718,21 @@ body {
     margin: 10px 0;
     color: #666;
     font-size: 0.95em;
+}
+
+.footer-youtube {
+    margin-top: 4px;
+}
+
+.footer-youtube a {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.footer-youtube-handle {
+    color: #64748b;
+    font-weight: 500;
+    margin-left: 0.25rem;
 }
 
 /* Amazon Button */

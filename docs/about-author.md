@@ -40,4 +40,9 @@ permalink: /about-author.html
         <p>That perspective pushed him across traditional disciplinary lines, drawing on category theory, physics, systems theory, biology, and philosophy. <em>Interfaces of Reality</em> is the synthesis: a way to connect matter, life, mind, machines, and ethics without reducing them to a single level of explanation.</p>
         <p>He works between theory and practice. The technologies that will matter most in the coming decades, in his view, are those that respect boundaries, preserve meaning, and enable coordination at scale—so that we shape our tools, and ourselves, with greater care.</p>
     </section>
+
+    <section class="section author-contact" aria-labelledby="about-contact-heading">
+        <h2 id="about-contact-heading">Contact</h2>
+        <p>For questions about the book, speaking, or collaboration, you can reach him at <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+    </section>
 </div>

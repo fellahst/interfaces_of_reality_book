@@ -2,6 +2,10 @@
 title: Interfaces of Reality
 description: How Life, Mind, and Machines Navigate a World of Possibilities
 author: Stephane Fellah
+email: fellahst@gmail.com
+youtube_channel_url: "https://www.youtube.com/@InterfacesofReality"
+youtube_channel_handle: "@interfacesofReality"
+youtube_book_overview_id: "dCTLpo7sqOk"
 # GitHub Pages with /docs folder setup:
 # - When using /docs folder, GitHub Pages serves it as root of the site
 # - For project sites: site is at username.github.io/repository-name
@@ -38,4 +42,7 @@ navigation:
     url: /about-author.html
   - title: Get the Book
     url: /get-the-book.html
+  - title: YouTube
+    url: https://www.youtube.com/@InterfacesofReality
+    external: true
 

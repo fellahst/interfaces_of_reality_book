@@ -11,6 +11,29 @@ subtitle: How Life, Mind, and Machines Navigate a World of Possibilities
         <div class="author">by {{ site.author }}</div>
     </header>
 
+    <section id="book-overview" class="home-video-section" aria-labelledby="home-video-heading">
+        <div class="home-video-inner">
+            <h2 id="home-video-heading" class="home-video-title">Book overview</h2>
+            <p class="home-video-intro">
+                <a href="{{ site.youtube_channel_url }}" target="_blank" rel="noopener noreferrer">Interfaces of Reality on YouTube</a>
+                <span class="home-video-handle">{{ site.youtube_channel_handle }}</span>
+            </p>
+            <div class="youtube-embed-wrap">
+                <iframe src="https://www.youtube-nocookie.com/embed/{{ site.youtube_book_overview_id }}"
+                        title="Book overview: Interfaces of Reality"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                        loading="eager"></iframe>
+            </div>
+            <p class="home-video-foot">
+                <a href="{{ '/get-the-book.html' | relative_url }}">Get the book</a>
+                <span aria-hidden="true"> · </span>
+                <a href="{{ site.youtube_channel_url }}" target="_blank" rel="noopener noreferrer">YouTube channel</a>
+            </p>
+        </div>
+    </section>
+
     <section class="home-intro" aria-labelledby="home-lead-heading">
         <div class="home-intro-inner">
             <div class="home-intro-text">
@@ -18,6 +41,7 @@ subtitle: How Life, Mind, and Machines Navigate a World of Possibilities
                 <p class="home-lead">Reality organizes itself through <strong>interfaces</strong>: boundaries that constrain interaction while enabling coordination. These interfaces stack hierarchically—each layer builds on those below—so new behavior emerges through accumulated constraints, not by replacing what came before.</p>
                 <div class="home-cta">
                     <a href="{{ '/get-the-book.html' | relative_url }}" class="btn-home btn-home--primary">Get the book</a>
+                    <a href="#book-overview" class="btn-home btn-home--secondary">Watch overview</a>
                 </div>
             </div>
             <div class="home-intro-media">

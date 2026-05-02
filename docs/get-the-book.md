@@ -42,6 +42,22 @@ permalink: /get-the-book.html
             </div>
         </div>
     </div>
+
+    <section class="get-book-video" aria-labelledby="book-overview-heading">
+        <h2 id="book-overview-heading">Book overview</h2>
+        <p class="get-book-channel-line">
+            <strong>Interfaces of Reality</strong> on YouTube — {{ site.youtube_channel_handle }}.
+            Channel: <a href="{{ site.youtube_channel_url }}" target="_blank" rel="noopener noreferrer">{{ site.youtube_channel_url }}</a>
+        </p>
+        <div class="youtube-embed-wrap">
+            <iframe src="https://www.youtube-nocookie.com/embed/{{ site.youtube_book_overview_id }}"
+                    title="Book overview: Interfaces of Reality"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                    loading="lazy"></iframe>
+        </div>
+    </section>
     
     <div class="section" style="max-width: 800px; margin: 40px auto; padding: 0 20px;">
         <h3 style="color: var(--primary-color); margin-bottom: 20px;">About the Book</h3>
