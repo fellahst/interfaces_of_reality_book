@@ -4,11 +4,11 @@ Having seen how ontologies function as semantic interfaces, we can now learn how
 
 At this point, we have established a new way of thinking about ontologies. They are not descriptions of reality, but interfaces that enable coordination. They are not world models, but boundaries that stabilize meaning. This insight is profound, but it raises a practical question: how do we actually build such ontologies?
 
-The question now is practical: how do we discover the right boundaries? How do we design interfaces that enable coordination without collapsing under change? This chapter presents a concrete methodology: Interface-First Ontology Engineering. It is a way of building ontologies that starts with boundaries rather than entities, with coordination rather than representation, with evolution rather than completion. This methodology transforms ontology engineering from an art into a craft that can be learned and practiced.
+The question now is practical: how do we discover the right boundaries? How do we design interfaces that enable coordination without collapsing under change? This chapter presents a concrete methodology: \index{interface-first}Interface-First Ontology Engineering. It is a way of building ontologies that starts with boundaries rather than entities, with coordination rather than representation, with evolution rather than completion. This methodology transforms ontology engineering from an art into a craft that can be learned and practiced.
 
 What ties everything together is this: ontology design is not about capturing reality, it's about creating boundaries that enable coordination. This shift transforms ontology engineering from an impossible task into a practical craft.
 
-Right now, as you read this, engineers are building ontologies that will shape how billions of people access information, how AI systems understand the world, and how knowledge is preserved for future generations. The interfaces they design today will determine what is possible tomorrow. This is not abstract. This is urgent, and it demands a new approach.
+Engineers are building ontologies that will shape how billions of people access information, how AI systems understand the world, and how knowledge is preserved for future generations. The interfaces they design today will determine what is possible tomorrow. This is not abstract. This is urgent, and it demands a new approach.
 
 ## Start with Interaction, Not Entities
 

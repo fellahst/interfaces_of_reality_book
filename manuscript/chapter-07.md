@@ -4,9 +4,9 @@ Life does not begin with genes, cells, or reproduction. It begins with something
 
 Here's a puzzle: How does a cell remain a cell when every molecule inside it is constantly being replaced? The answer will change how you see life itself.
 
-Before there are organisms, before there are species, before there is evolution as we usually understand it, there must be a system that can distinguish itself from its surroundings and remain coherent over time. Without that distinction, nothing can persist long enough to be called alive. This is extraordinary: life begins not with complexity, but with a simple boundary.
+Before there are organisms, before there are species, before there is evolution as we usually understand it, there must be a system that can distinguish itself from its surroundings and remain coherent over time. Without that distinction, nothing can persist long enough to be called alive. This is telling: life begins not with complexity, but with a simple boundary.
 
-Right now, as you read this, trillions of boundaries are maintaining themselves in your body. Every cell membrane, every organ boundary, every regulatory interface is actively preserving the distinction between self and environment. This is not passive. This is active, continuous, and it is what makes you alive. Without these boundaries, you would dissolve into the universe. With them, you persist, think, and experience. This is the miracle of biological interfaces.
+As you read this, trillions of boundaries are maintaining themselves in your body. Every \index{cell}cell \index{membrane}membrane, every organ boundary, every regulatory interface is actively preserving the distinction between self and environment. This is not passive. This is active, continuous, and it is what makes you alive. Without these boundaries, you would dissolve into the universe. With them, you persist, think, and experience. This is the miracle of biological interfaces.
 
 In the previous chapters, we saw how physical and thermodynamic interfaces make stability possible in a dynamic universe. Physical interfaces create stable patterns in fields. Thermodynamic interfaces create stable structures far from equilibrium. Spacetime interfaces create the framework that makes all interaction possible.
 
@@ -22,7 +22,7 @@ This separation is not absolute. Life depends on exchange. Matter, energy, and i
 
 Life exists in the narrow region between these extremes. The biological interface, the membrane, the regulatory boundary, the control network, is what makes this balance possible.
 
-Consider what happens when a cell dies. The molecules do not disappear. The atoms remain. What changes is that the boundary is lost. The membrane breaks down, and the cell's contents mix with the environment. The cell ceases to exist not because its parts are gone, but because the interface that maintained its identity is gone.
+Consider what happens when a \index{cell}cell dies. The molecules do not disappear. The atoms remain. What changes is that the boundary is lost. The \index{membrane}membrane breaks down, and the cell's contents mix with the environment. The cell ceases to exist not because its parts are gone, but because the interface that maintained its identity is gone.
 
 This is true at every level. An organism dies when its biological interfaces fail. The heart stops, the brain stops, the regulatory networks collapse. The matter remains, but the interfaces that maintained coherence are gone. Without those interfaces, there is no organism, only a collection of molecules.
 
@@ -78,13 +78,13 @@ Or consider signaling pathways. When a hormone binds to a receptor on the cell s
 
 Figure \ref{fig:gene-regulation} shows regulatory interfaces in action. Gene regulation networks determine which genes are expressed, when, and in response to what. Signaling pathways have interfaces at each step that filter information, allowing only certain signals to influence cellular processes. Some signals are amplified, others are suppressed. Some pathways are activated, others are blocked. The interfaces determine which signals matter and which do not. Regulation allows the organism to remain stable not by resisting change, but by responding to it in structured ways. This is a profound shift. Physical systems respond passively to perturbations. Living systems respond conditionally. They have interfaces that allow them to choose how to respond, to filter what matters, and to maintain coherence despite disturbance.
 
-## Homeostasis: Stability Through Change
+## \index{homeostasis}Homeostasis: Stability Through Change
 
-Homeostasis is often described as the ability to maintain internal variables within a narrow range. Temperature, pH, ion concentration, these must remain stable for life to continue.
+\index{homeostasis}Homeostasis is often described as the ability to maintain internal variables within a narrow range. Temperature, pH, ion concentration, these must remain stable for life to continue.
 
 But homeostasis is not about freezing internal conditions. It is about actively countering deviations. When temperature rises, the system responds to cool down. When pH drops, the system responds to raise it. When ion concentration changes, the system responds to restore it.
 
-This activity depends on interfaces that detect differences, trigger responses, and modulate flows. The interfaces create feedback loops that maintain stability through continuous adjustment.
+This activity depends on interfaces that detect differences, trigger responses, and modulate flows. The interfaces create \index{feedback loop}feedback loops that maintain stability through continuous adjustment.
 
 Consider body temperature regulation. When you are too hot, your body responds by sweating, dilating blood vessels, and increasing respiration. When you are too cold, it responds by shivering, constricting blood vessels, and reducing heat loss. These responses are triggered by interfaces, temperature sensors that detect deviations and regulatory systems that coordinate responses.
 
@@ -180,6 +180,6 @@ Something that helps maintain the boundary is good. Something that threatens it 
 
 This insight will become crucial later, when we discuss cognition, ethics, and artificial intelligence. But it already appears here, in the most basic biological systems. Life creates value because it creates systems that must maintain themselves.
 
-This is extraordinary. Life is not an exception to physics, it is physics discovering new interfaces. The same principles that create stars also create cells. The boundaries that make matter stable also make life possible. This is not philosophy. This is what the evidence shows.
+This is profound. Life is not an exception to physics, it is physics discovering new interfaces. The same principles that create stars also create cells. The boundaries that make matter stable also make life possible. This is not speculation; it's what the evidence demonstrates.
 
 In the next chapter, we will see how sensorimotor interfaces extend biological boundaries into the world, giving rise to behavior, agency, and the first glimmers of intelligence. That is where the interface stops being merely a boundary and becomes a means of engagement. And what we're about to discover will change how you see agency itself.

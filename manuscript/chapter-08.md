@@ -4,7 +4,7 @@ Imagine a bacterium swimming toward food. It has no brain, no eyes, no plan. Yet
 
 The answer reveals something extraordinary: this simple organism is doing something that would take a supercomputer to simulate. It is closing a loop between sensing and acting, creating a dynamic coupling with its environment that transforms passive existence into active engagement. This is not just movement, it is the birth of agency itself.
 
-Right now, as you read this, your eyes are moving, your hand is holding this book, your body is maintaining balance. You are not thinking about these actions, they are happening automatically, through sensorimotor interfaces that connect perception to action. This is extraordinary, and it reveals something profound: agency is not a luxury. It is a fundamental feature of life, and it emerges from the same principles that create stable atoms.
+As you read this, your eyes are moving, your hand is holding this book, your body is maintaining balance. You are not thinking about these actions, they are happening automatically, through sensorimotor interfaces that connect perception to action. This reveals something profound: agency is not a luxury. It is a fundamental feature of life, and it emerges from the same principles that create stable atoms.
 
 At some point in the history of living systems, maintaining a boundary was no longer enough. To survive, organisms had to reach beyond themselves, to seek nutrients, avoid danger, and exploit opportunities scattered unevenly across their environment. This necessity gave rise to a new kind of interface, one that did not simply regulate exchange but closed a loop between organism and world. Perception and action emerged together, creating a dynamic coupling that transformed passive stability into active agency.
 
@@ -44,7 +44,7 @@ This closure creates a new form of stability. Instead of merely maintaining inte
 
 Consider a simple bacterium swimming toward a food source. The bacterium has receptors that detect chemical gradients. When it senses more food in one direction, it moves that way. As it moves, the gradient changes, and it adjusts its direction. The loop between sensing and acting maintains the bacterium's relation to the food source, creating a dynamic stability that would be impossible through regulation alone. The bacterium is not just moving; it is actively maintaining a relationship with its environment.
 
-This is extraordinary when you think about it. A single-celled organism, with no nervous system, is maintaining a dynamic relationship with its environment. It is not just reacting; it is actively participating in shaping its own fate. This simple loop, sense, act, sense again, is doing something profound: it is creating purpose from process, agency from interaction.
+This is striking when you think about it. A single-celled organism, with no nervous system, is maintaining a dynamic relationship with its environment. It is not just reacting; it is actively participating in shaping its own fate. This simple loop, sense, act, sense again, is doing something profound: it is creating purpose from process, agency from interaction.
 
 This is not just movement. It is engagement. The bacterium is not passively drifting; it is actively maintaining its position relative to something that matters. The sensorimotor interface creates this engagement, transforming the organism from a passive recipient of environmental conditions into an active participant in shaping its own fate. This transformation, from passive to active, from reactive to anticipatory, is the birth of agency.
 
@@ -82,7 +82,7 @@ Figure \ref{fig:action-perception} illustrates how action reshapes perception in
 
 The interface is the loop. It is not a one-way flow from world to organism, but a continuous cycle of interaction. The organism acts, which changes what it perceives, which changes how it acts, which changes what it perceives again. The loop is the interface, and the interface is the loop.
 
-Right now, as you read this, you're probably aware of the room around you. But here's the fascinating part: you didn't build a complete model of the room first. You're continuously updating your sense of the space as you move your eyes, shift in your chair, or turn your head. Each movement reveals new information, which changes what you can do next, which changes what you perceive.
+As you read, you're probably aware of the room around you. But here's the fascinating part: you didn't build a complete model of the room first. You're continuously updating your sense of the space as you move your eyes, shift in your chair, or turn your head. Each movement reveals new information, which changes what you can do next, which changes what you perceive.
 
 Consider how you navigate a room. You do not first build a complete model of the room, then plan a path, then execute it. Instead, you move while sensing, adjusting your path as you go. Your perception guides your action, but your action also shapes your perception. As you move, new parts of the room come into view, and you adjust accordingly. The loop between sensing and acting is continuous, creating a dynamic engagement with the environment.
 
@@ -90,9 +90,9 @@ Try this experiment: close your eyes and try to navigate to another room. You'll
 
 This is sensorimotor engagement. The interface is not a boundary between inside and outside, but a loop that connects them. The organism and environment are not separate; they are coupled through the sensorimotor interface, each continuously shaping the other through their interaction. This coupling is the essence of life, not as a thing, but as a process, a dynamic relationship between organism and world.
 
-## Affordances: The World as Invitation
+## \index{affordance}Affordances: The World as Invitation
 
-One of the most illuminating concepts to emerge from the study of sensorimotor systems is that of affordances. An affordance is not a property of the environment alone, nor of the organism alone. It is a relation between the two. A branch affords perching for a bird, but not for a fish. A surface affords walking for a human, but not for a microbe. A handle affords grasping for a creature with hands, but not for one without. The same object offers different possibilities to different organisms, depending on their sensorimotor capacities.
+One of the most illuminating concepts to emerge from the study of sensorimotor systems is that of \index{affordance}affordances. An \index{affordance}affordance is not a property of the environment alone, nor of the organism alone. It is a relation between the two. A branch \index{affordance}affords perching for a bird, but not for a fish. A surface \index{affordance}affords walking for a human, but not for a microbe. A handle \index{affordance}affords grasping for a creature with hands, but not for one without. The same object offers different possibilities to different organisms, depending on their sensorimotor capacities.
 
 ![Affordances: The World as Invitation](assets/affordances_world_invitation.jpg){#fig:affordances width=80%}
 
@@ -128,7 +128,7 @@ Agency emerges from the sensorimotor interface. It is not something added on top
 
 ## Control Without Centralization
 
-Sensorimotor systems often give the impression of centralized control. We imagine a brain issuing commands to the body, a central processor coordinating all activity. But in most living systems, control is distributed. Simple organisms exhibit complex behavior without anything resembling a central processor. Even in more complex animals, many sensorimotor loops operate independently and in parallel. The control emerges from the coordination of interfaces, not from a single controlling entity. This distributed control is more robust, more flexible, and more efficient than centralized control.
+Sensorimotor systems often give the impression of \index{centralized control}centralized control. We imagine a brain issuing commands to the body, a central processor coordinating all activity. But in most living systems, control is \index{distributed control}distributed. Simple organisms exhibit complex behavior without anything resembling a central processor. Even in more complex animals, many sensorimotor loops operate independently and in parallel. The control emerges from the coordination of interfaces, not from a single controlling entity. This \index{distributed control}distributed control is more robust, more flexible, and more efficient than \index{centralized control}centralized control.
 
 ![Control Without Centralization](assets/distributed_control.jpg){#fig:distributed-control width=80%}
 
@@ -178,7 +178,7 @@ This has profound implications. If interfaces can be extended, then the boundary
 
 ## Preparing the Ground for Cognition
 
-By the time sensorimotor interfaces are firmly in place, much of what we associate with mind is already present in embryonic form: selective attention, goal-directed behavior, adaptation through feedback, anticipation of future states. These capacities emerge from the sensorimotor interface, not as separate faculties, but as properties of the loop itself.
+By the time sensorimotor interfaces are firmly in place, much of what we associate with mind is already present in embryonic form: selective attention, goal-directed behavior, \index{adaptation}adaptation through feedback, anticipation of future states. These capacities emerge from the sensorimotor interface, not as separate faculties, but as properties of the loop itself.
 
 ![Preparing the Ground for Cognition](assets/preparing_cognition.jpg){#fig:preparing-cognition width=80%}
 

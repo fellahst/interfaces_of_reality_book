@@ -1,4 +1,4 @@
-# About the Author {-}
+# About the Author
 
 Stephane Fellah is a systems architect, researcher, and entrepreneur working at the intersection of artificial intelligence, semantic technologies, geospatial systems, and foundational questions about how reality is structured.
 

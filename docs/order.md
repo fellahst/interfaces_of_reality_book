@@ -1,15 +1,14 @@
 ---
 layout: default
-title: Order Printed Book
+title: Order the Book
 permalink: /order/
 ---
 
 <div class="page-header">
-    <h1>Order a printed copy</h1>
+    <h1>Order the book</h1>
     <p style="color: #666; font-size: 1.1em; margin-top: 10px;">
-        This page securely processes your order through our backend endpoint. 
-        Your payment and shipping information is never exposed to the browser—all sensitive operations 
-        are handled server-side.
+        The paperback is available on <strong>Amazon</strong>. Use the link below for the fastest checkout and shipping options in your region.
+        The form further down is an optional path for direct print-on-demand ordering through this site once your backend is configured (Stripe and a secure worker).
     </p>
 </div>
 
@@ -206,6 +205,34 @@ permalink: /order/
 </style>
 
 <div class="order-container">
+    <div class="order-section">
+        <h2>Buy on Amazon</h2>
+        <p style="color: #555; margin-bottom: 20px; line-height: 1.6;">
+            <em>Interfaces of Reality</em> (paperback, English) is in stock on Amazon. ISBN-13: <strong>978-1105833892</strong>.
+        </p>
+        <p style="margin-bottom: 24px;">
+            <a href="https://a.co/d/0hU5Ff4j"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="amazon-button">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L21.7 4H5.21l-.94-2H1zm16 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                </svg>
+                <span>Buy on Amazon</span>
+            </a>
+        </p>
+        <p style="color: #666; font-size: 0.95em; margin: 0;">
+            Opens the product page in a new tab: <a href="https://a.co/d/0hU5Ff4j" target="_blank" rel="noopener noreferrer">https://a.co/d/0hU5Ff4j</a>
+        </p>
+    </div>
+
+    <div class="order-section">
+        <h2>Direct print order (optional)</h2>
+        <p style="color: #666; margin-bottom: 16px; line-height: 1.6;">
+            The form below is for print-on-demand checkout through your own endpoint when it is wired up. Payment and shipping are never handled in the browser alone: configure the Stripe and worker URLs in the script before accepting real orders.
+        </p>
+    </div>
+
     <form id="orderForm">
         <!-- Section A: Choose format -->
         <div class="order-section">

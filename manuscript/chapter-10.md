@@ -2,7 +2,7 @@
 
 Few words in science inspire as much awe, and as much confusion, as emergence. We use it when familiar explanations fail. When simple parts give rise to complex behavior. When order appears where none seemed possible. Consciousness, intelligence, life, markets, ecosystems, all are said to "emerge" from underlying processes in ways that feel fundamentally mysterious.
 
-Right now, as you read this, a traffic jam might be forming on a highway somewhere. No one intended to create it. No one is in charge. Yet it will form, persist, and eventually dissolve. How? The answer will change how you see complexity itself.
+A traffic jam might be forming on a highway somewhere. No one intended to create it. No one is in charge. Yet it will form, persist, and eventually dissolve. How? The answer will change how you see complexity itself.
 
 Too often, emergence is treated as a polite way of saying, something important happens here, but we don't really understand why. This chapter argues for a quieter, more grounded view. \index{emergence}Emergence is not magic. It is not a new force. It is not a violation of physical law. It is what naturally happens when \index{interface}interfaces stack, constrain, and \index{coordination}coordinate interaction across scales.
 
@@ -38,7 +38,7 @@ Figure \ref{fig:constraint-accumulation} shows how constraints accumulate to cre
 
 ## A Simple Example: Traffic
 
-Consider traffic on a highway. Each driver follows simple rules: maintain speed, avoid collisions, respond to nearby vehicles. There is no central controller. No driver intends to create a traffic jam.
+Consider \index{traffic jam}traffic on a highway. Each driver follows simple rules: maintain speed, avoid collisions, respond to nearby vehicles. There is no central controller. No driver intends to create a traffic jam.
 
 Yet traffic jams appear, persist, and dissolve in recognizable patterns. The jam is not an object. It has no fixed location or material identity. It is a stable pattern maintained by interfaces: speed limits, lane boundaries, reaction times, vehicle spacing.
 
@@ -58,13 +58,13 @@ In economics, markets stabilize or collapse depending on institutional boundarie
 
 In each case, the emergent phenomenon is not contained in the parts. It exists between them, in the regulated interactions. Emergence lives at the interfaces.
 
-## Why Scale Matters
+## Why \index{scale}Scale Matters
 
-One reason emergence feels mysterious is that it often appears at scales far removed from the underlying mechanisms.
+One reason emergence feels mysterious is that it often appears at \index{scale}scales far removed from the underlying mechanisms.
 
-At small scales, interactions are fast, local, and noisy. At larger scales, behavior is slower, smoother, and more predictable. Interfaces filter out noise and amplify regularities.
+At small \index{scale}scales, interactions are fast, local, and \index{noise}noisy. At larger \index{scale}scales, behavior is slower, smoother, and more predictable. Interfaces filter out \index{noise}noise and amplify regularities.
 
-This filtering creates effective laws at higher levels. These laws are not fundamental in the physical sense, but they are real. They constrain behavior just as strongly within their domain.
+This filtering creates \index{effective law}effective laws at higher levels. These laws are not fundamental in the physical sense, but they are real. They constrain behavior just as strongly within their domain.
 
 Thermodynamics does not replace mechanics. It emerges from it by interface-mediated averaging. The interfaces between molecules create constraints that make thermodynamic laws effective at the macroscopic scale.
 
@@ -72,9 +72,9 @@ Consider temperature. At the molecular level, there is no temperature, only the 
 
 The same is true of pressure, entropy, and all the other thermodynamic quantities. They emerge from molecular interactions constrained by interfaces. They are real, they are effective, and they operate at their own scale.
 
-## Downward Causation Without Paradox
+## \index{downward causation}Downward Causation Without Paradox
 
-Emergent systems often appear to exert "downward causation," influencing the behavior of their components.
+Emergent systems often appear to exert "\index{downward causation}downward causation," influencing the behavior of their components.
 
 A traffic jam slows individual cars. A social norm shapes individual behavior. A mental intention guides neural activity. A market trend influences individual traders.
 
@@ -92,9 +92,9 @@ The same is true of social norms. A norm does not cause individual behavior in a
 
 ## Why Central Control Is Not Required
 
-One of the most persistent myths about emergence is that complexity requires centralized control. We imagine a conductor directing an orchestra, a general commanding an army, a brain controlling the body.
+One of the most persistent myths about emergence is that complexity requires \index{centralized control}centralized control. We imagine a conductor directing an orchestra, a general commanding an army, a brain controlling the body.
 
-In reality, centralized control often prevents emergence by collapsing diversity and adaptability. Emergent systems thrive on distributed interaction regulated by local interfaces. Each component follows simple rules. The global pattern arises from their coordination, not from command.
+In reality, \index{centralized control}centralized control often prevents emergence by collapsing diversity and adaptability. Emergent systems thrive on \index{distributed control}distributed interaction regulated by local interfaces. Each component follows simple rules. The global pattern arises from their coordination, not from command.
 
 This insight has reshaped fields as diverse as robotics, neuroscience, and organizational design. Intelligence scales not by adding controllers, but by refining interfaces.
 
@@ -128,7 +128,7 @@ This is why emergent systems can be both robust and fragile. They are robust to 
 
 ## When Emergence Goes Wrong
 
-Emergence is not inherently good. The same mechanisms that produce cooperation can produce collapse. Feedback loops can amplify noise instead of damping it. Interfaces can become brittle, excluding necessary variation.
+Emergence is not inherently good. The same mechanisms that produce cooperation can produce collapse. Feedback loops can amplify \index{noise}noise instead of damping it. Interfaces can become brittle, excluding necessary \index{variation}variation.
 
 Financial crises, ecological collapse, and systemic failures are all examples of emergent behavior gone wrong. These failures are rarely due to "bad actors" alone. They are failures of boundary design.
 

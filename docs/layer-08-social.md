@@ -31,8 +31,8 @@ position: Built on Semantic Interfaces - Coordinates behavior and enables cooper
     <div class="section">
         <h3>Institutions as Stabilizing Structures</h3>
         <p>Institutions are formalized social interfaces. They include legal systems, economic structures, educational systems, and political organizations. Like biological membranes, institutions create boundaries that maintain coherence while allowing exchange.</p>
-        <img src="{{ '/assets/stability_without_rigidity.jpg' | relative_url }}" alt="Stability Without Rigidity" style="width: 100%; max-width: 800px; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-        <p>As shown above, this shows how institutions can maintain stability without rigidity. Like good interfaces, institutions create boundaries that enable coordination while remaining flexible enough to adapt. They don't freeze social structures in place, but create the constraints that make large-scale cooperation possible. Institutions stabilize social interfaces, making them more robust and persistent, while still allowing evolution and change within the boundaries they establish.</p>
+        <img src="{{ '/assets/ontology_living_interface.jpg' | relative_url }}" alt="Ontology as Living Interface Lifecycle" style="width: 100%; max-width: 800px; margin: 20px 0; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+        <p>As shown above, institutions behave like living interfaces: a stable core of commitments (what must stay recognizable for coordination to work) with room for extension and adaptation as pressures change. The diagram mirrors how formal systems evolve without collapsing, the same pattern as ontologies that preserve identity while their details move.</p>
         <p>Institutions stabilize social interfaces, making them more robust and persistent. They create the conditions for large-scale cooperation and collective action that would be impossible without them.</p>
     </div>
 

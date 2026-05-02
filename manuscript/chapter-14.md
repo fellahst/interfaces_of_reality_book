@@ -5,7 +5,7 @@ Having explored how semantic interfaces create shared meaning, we can now witnes
 
 Right now, as you read this, artificial intelligence systems are learning. They are discovering patterns in data, recognizing faces, translating languages, and making predictions. But something deeper is happening, something that most people miss. These systems are not just learning patterns, they are discovering interfaces.
 
-Right now, as you read this, AI systems are discovering interfaces that evolution took millions of years to find. They're doing it in weeks. In silicon. Without guidance. This is unprecedented. And it's happening faster than we can understand it.
+AI systems are independently rediscovering interfaces that evolution took millions of years to find—in weeks, in silicon, without guidance. This unprecedented acceleration is happening faster than we can understand it.
 
 Artificial intelligence is often described as a machine that learns \index{pattern}patterns. This description is not wrong, but it is incomplete in a way that matters deeply. Patterns alone do not explain why learned systems generalize, why they fail, or why they sometimes behave in ways that feel uncannily intelligent. Pattern learning tells us what correlates. It does not tell us what holds together.
 
@@ -15,23 +15,23 @@ To understand what AI is really learning, and what it might yet learn, we need t
 
 Artificial intelligence, at its most successful, is learning \index{interface learning}interfaces. This is not just a technical detail, it's the key to building robust, generalizable, and truly intelligent systems. And right now, we are witnessing this discovery happen in real-time, in silicon instead of flesh.
 
-This is extraordinary. AI systems are not copying human intelligence, they are exploring the same landscape of possibilities and converging on the same interfaces. This convergence tells us something profound: the interfaces are not hidden. They are waiting to be found. And we are finding them faster than ever before.
+This is significant. AI systems are not copying human intelligence, they are exploring the same landscape of possibilities and converging on the same interfaces. This convergence tells us something profound: the interfaces are not hidden. They are waiting to be found. And we are finding them faster than ever before.
 
 ## Why Pattern Learning Hits a Wall
 
 Modern machine learning systems are extraordinarily good at finding regularities in data. Given enough examples, they can recognize images, translate languages, predict trends, and generate convincing text.
 
-Yet these systems are notoriously fragile. Small changes in input can produce large errors. Models trained in one context often fail in another. Adding more data sometimes helps, but sometimes makes things worse. These failures are not accidents; they are the natural consequence of learning correlations without discovering the \index{boundary}boundaries that stabilize them.
+Yet these systems are notoriously \index{brittleness}brittle. Small changes in input can produce large errors. Models trained in one context often fail in another. Adding more data sometimes helps, but sometimes makes things worse. These failures are not accidents; they are the natural consequence of learning correlations without discovering the \index{boundary}boundaries that stabilize them.
 
 Without interfaces, learned patterns float freely in possibility space. They have no protection against variations that were not present in the training data. The system has learned *what* correlates, but not *why* those correlations hold, or under what conditions they break down.
 
 Consider an image recognition system trained to identify cats. It learns to recognize fur textures and ear shapes. But if the training data only contains photos of cats in daylight, the system might fail when presented with a cat in shadow, a sketch, or a cat viewed from below.
 
-The system has learned correlations, patterns that work in the training context, but it has not learned the **interface of the object**. It has not learned what makes a cat a cat (invariance), and what is merely lighting or angle (noise). It has failed to discover the boundary that separates the signal from the context.
+The system has learned correlations, patterns that work in the training context, but it has not learned the **interface of the object**. It has not learned what makes a cat a cat (\index{invariance}invariance), and what is merely lighting or angle (\index{noise}noise). It has failed to discover the boundary that separates the \index{signal}signal from the context.
 
 ![Why Pattern Learning Hits a Wall](assets/pattern_learning.jpg){#fig:pattern-learning width=80%}
 
-Figure \ref{fig:pattern-learning} illustrates the failure mode: a model trained on cats in daylight learns superficial correlations (fur patterns, ear shapes) but fails when presented with the same object in new contexts, shadow, a sketch, or an unusual angle. The learned pattern floats freely, without the stabilizing boundaries that would make it robust.
+Figure \ref{fig:pattern-learning} illustrates the failure mode: a model trained on cats in daylight learns superficial correlations (fur patterns, ear shapes) but fails when presented with the same object in new contexts, shadow, a sketch, or an unusual angle. The learned pattern floats freely, without the stabilizing boundaries that would make it \index{robustness}robust.
 
 
 ## Generalization as Boundary Discovery
@@ -53,9 +53,9 @@ To compress thousands of diverse images into a coherent vector space, the model 
 
 Even today's AI systems rely on interfaces, though we usually call them "\index{inductive bias}inductive biases", the architectural assumptions that shape what a model can learn.
 
-Neural network architectures impose boundaries at every level: layers restrict information flow, bottlenecks enforce compression, and attention mechanisms filter relevance. These are not just technical details; they are interfaces that determine what the system can discover.
+\index{neural network}Neural network architectures impose boundaries at every level: layers restrict information flow, bottlenecks enforce compression, and \index{attention mechanism}attention mechanisms filter relevance. These are not just technical details; they are interfaces that determine what the system can discover.
 
-* **\index{CNN}Convolutional Neural Networks (CNNs):** The convolutional layer creates an interface that enforces *\index{spatial invariance}spatial invariance*, a cat is a cat whether it's in the top left or bottom right of an image. This interface filters out location-specific information while preserving shape and structure.
+* **\index{CNN@CNN (Convolutional Neural Network)}Convolutional Neural Networks (CNNs):** The convolutional layer creates an interface that enforces *\index{spatial invariance}spatial invariance*, a cat is a cat whether it's in the top left or bottom right of an image. This interface filters out location-specific information while preserving shape and structure.
 * **Pooling Layers:** These create interfaces that preserve features while discarding precise location data, enabling the network to recognize objects regardless of their position. They enforce translation invariance, ensuring that a cat in the top-left corner is treated the same as a cat in the bottom-right.
 * **Loss Functions:** These define the ultimate interface, the distinction between "right" and "wrong" that the system must respect. They determine what variations matter and what can be ignored. A classification loss function, for example, creates an interface that separates correct from incorrect category assignments, filtering out all other aspects of the prediction.
 
@@ -149,7 +149,7 @@ Figure \ref{fig:interface-discovery} illustrates how systems can explicitly disc
 
 ## A Different Path to AGI
 
-Much speculation about \index{AGI}Artificial General Intelligence (AGI) focuses on scale: more parameters, more data, more compute.
+Much speculation about \index{AGI@AGI (Artificial General Intelligence)}Artificial General Intelligence (AGI) focuses on scale: more parameters, more data, more compute.
 
 Interface learning suggests a different path. General intelligence may emerge not from scale alone, but from the ability to **dynamically discover and manage interfaces** across many domains.
 

@@ -4,11 +4,11 @@ Having seen how power flows through interfaces and how responsibility follows po
 
 Every species changes its environment. Beavers build dams. Corals raise reefs. Trees alter atmospheres. Life has always reshaped the conditions of its own survival. But what humanity is doing now is different in kind, not just in scale. This difference is profound, and understanding it is essential for our future.
 
-Right now, as you read this, we are becoming a species that can deliberately reshape the boundaries of possibility. This is unprecedented. And it demands a new kind of awareness.
+We are becoming a species that can deliberately reshape the boundaries of possibility. This is unprecedented. And it demands a new kind of awareness.
 
 We are no longer merely modifying environments. We are redesigning the interfaces that govern how reality itself is navigated: how information flows, how decisions are made, how identities are formed, how futures are constrained or opened. For the first time, a species is becoming consciously involved in shaping the boundaries that shape everything else.
 
-This is extraordinary. We are not just tool users anymore. We are boundary designers. We are shaping the interfaces that shape reality itself. This is both our greatest opportunity and our greatest responsibility. The future depends on whether we can learn to see interfaces clearly and shape them wisely.
+This is significant. We are not just tool users anymore. We are boundary designers. We are shaping the interfaces that shape reality itself. This is both our greatest opportunity and our greatest responsibility. The future depends on whether we can learn to see interfaces clearly and shape them wisely.
 
 What should be clear by now is the full journey: from interfaces creating atoms to interfaces creating meaning to interfaces being shaped by us. This is not just a new way of seeing reality, it's a new way of understanding our place in it. We are not separate from the systems we shape. We are part of them. And our participation matters.
 

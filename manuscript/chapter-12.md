@@ -1,6 +1,6 @@
 # \index{ontology}Ontologies as Interfaces
 
-Right now, as you read this, thousands of ontology projects are failing. They are collapsing under their own weight, fracturing into incompatible versions, and sparking endless debates that never resolve. This is not because the people building them lack skill. It is because they are aiming for the wrong goal.
+Thousands of ontology projects are failing. They are collapsing under their own weight, fracturing into incompatible versions, and sparking endless debates that never resolve. This is not because the people building them lack skill. It is because they are aiming for the wrong goal.
 
 Having explored how semantic interfaces create shared meaning, we can now see how ontologies function as semantic interfaces. This connection explains why most ontology projects fail, and how to build ones that succeed.
 

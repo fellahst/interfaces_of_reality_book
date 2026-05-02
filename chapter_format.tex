@@ -4,6 +4,7 @@
 \usepackage{etoolbox}
 \usepackage{makeidx}
 \makeindex
+\usepackage{fancyhdr}
 
 % Redefine theindex environment to not start a new page
 \makeatletter
@@ -73,6 +74,13 @@
 \@addtoreset{section}{chapter}
 \makeatother
 
+% Add spacing between numbers and titles in Table of Contents
+\makeatletter
+% Modify \numberline to add space after the number
+\let\old@numberline\numberline
+\renewcommand{\numberline}[1]{\old@numberline{#1}\hspace{0.5em}}
+\makeatother
+
 % Add copyright page right after title page and bookmark for title page
 % Then add About the Author right after copyright page
 \makeatletter
@@ -96,21 +104,26 @@
     
     % Copyright page (Page 2 - verso/left page)
     \thispagestyle{empty}
-    \vspace*{\fill}
-    \begin{center}
+    \vspace*{0.5in}
+    \begin{flushleft}
+    {\large\textbf{Interfaces of Reality}}\\[0.2\baselineskip]
+    {\normalsize\textit{How Life, Mind, and Machines Navigate a World of Possibilities}}\\[1.5\baselineskip]
+    
     \small
-    Copyright \copyright\ 2025 by Stephane Fellah\\[0.5\baselineskip]
+    Copyright \copyright\ Stephane Fellah, 2026 \\[0.5\baselineskip]
     
-    All rights reserved.\\[0.3\baselineskip]
+    All rights reserved.\\[0.5\baselineskip]
     
-    No part of this book may be reproduced, stored in a retrieval system, or transmitted in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of the author, except in the case of brief quotations embodied in critical reviews and certain other noncommercial uses permitted by copyright law.\\[0.5\baselineskip]
+    ISBN-13: 978-1105-83389-2\\[1\baselineskip]
+   
+    No part of this book may be reproduced, stored in a retrieval system, or transmitted in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the prior written permission of the author, except in the case of brief quotations embodied in critical reviews and certain other noncommercial uses permitted by copyright law.\\[1\baselineskip]
     
-    For permission requests, please contact the author.\\[1\baselineskip]
+    For permission requests, please contact the author (fellahst@gmail.com).\\[1.5\baselineskip]
     
     First Edition\\[0.3\baselineskip]
     
-    2025
-    \end{center}
+    January 2026
+    \end{flushleft}
     \vspace*{\fill}
     \newpage
   }
@@ -124,7 +137,7 @@
 % Use addcontentsline which handles nesting automatically via toclevel@part
 \makeatletter
 \newcommand{\mypart}[1]{%
-  \clearpage%
+  \cleardoublepage%
   \stepcounter{part}%
   % Create anchor on title page (before any text)
   \phantomsection%
@@ -139,20 +152,23 @@
   \end{center}%
   \vspace*{\fill}%
   \clearpage%
+  % Set mark for header on next page
+  \markboth{}{}%
 }
 \makeatother
 
 % Define a custom epilogue command at the same level as parts
 % Use standard commands so they close the previous Part correctly
-\newcommand{\myepilogue}[1]{%
-  \clearpage%
+\newcommand{\myepilogue}[2]{%
+  \cleardoublepage%
   \phantomsection%
   \bookmarksetup{startatroot}% Return to root level (sibling of Parts)
   \addcontentsline{toc}{part}{#1}%
   \thispagestyle{empty}%
   \vspace*{\fill}%
   \begin{center}%
-    \Huge\bfseries #1%
+    \Huge\bfseries #1\\[0.5\baselineskip]%
+    \Large\itshape #2%
   \end{center}%
   \vspace*{\fill}%
   \clearpage%
@@ -175,19 +191,75 @@
 \newcommand{\myreferences}[1]{%
   \clearpage%
   \bookmarksetup{startatroot}% Return to root level (sibling of Parts)
+  \chapter*{#1}%
   \phantomsection%
   \hypertarget{referencesanchor}{}%
-  \chapter*{#1}%
   \@nobreakfalse
   \addtocontents{toc}{\protect\contentsline{part}{#1}{\thepage}{}}%
   \bookmark[level=0,dest=referencesanchor]{#1}%
 }
 \makeatother
 
+\makeatletter
+\newcommand{\myglossary}[1]{%
+  \clearpage%
+  \bookmarksetup{startatroot}% Return to root level (sibling of Acknowledgments)
+  \chapter*{#1}%
+  \phantomsection%
+  \hypertarget{glossaryanchor}{}%
+  \@nobreakfalse
+  \addtocontents{toc}{\protect\contentsline{part}{#1}{\thepage}{}}%
+  \bookmark[level=0,dest=glossaryanchor]{#1}%
+}
+\makeatother
+
+\makeatletter
+\newcommand{\myappendixa}[1]{%
+  \clearpage%
+  \bookmarksetup{startatroot}% Return to root level (sibling of Glossary)
+  \chapter*{#1}%
+  \phantomsection%
+  \hypertarget{appendixaanchor}{}%
+  \@nobreakfalse
+  \addtocontents{toc}{\protect\contentsline{part}{#1}{\thepage}{}}%
+  \bookmark[level=0,dest=appendixaanchor]{#1}%
+  % Disable section numbering in this appendix
+  \setcounter{secnumdepth}{0}%
+  \renewcommand{\thesection}{}%
+  \renewcommand{\thesubsection}{}%
+}
+\makeatother
+
+\makeatletter
+\newcommand{\myappendixb}[1]{%
+  \clearpage%
+  \bookmarksetup{startatroot}% Return to root level (sibling of Glossary)
+  \chapter*{#1}%
+  \phantomsection%
+  \hypertarget{appendixbanchor}{}%
+  \@nobreakfalse
+  \addtocontents{toc}{\protect\contentsline{part}{#1}{\thepage}{}}%
+  \bookmark[level=0,dest=appendixbanchor]{#1}%
+  % Disable section numbering in this appendix
+  \setcounter{secnumdepth}{0}%
+  \renewcommand{\thesection}{}%
+  \renewcommand{\thesubsection}{}%
+}
+\makeatother
+
+% Customize description environment for better glossary formatting
+\renewenvironment{description}
+  {\list{}{\labelwidth 0pt \itemindent-\leftmargin \leftmargin 2.5em
+          \itemsep 0.4\baselineskip
+          \parsep 0pt
+          \let\makelabel\descriptionlabel}}
+  {\endlist}
+\newcommand*\descriptionlabel[1]{\hspace\labelsep\normalfont\bfseries #1}
+
 % Define a custom appendices command at the same level as parts
 % Use standard commands so they close the previous Part correctly
 \newcommand{\myappendices}[1]{%
-  \clearpage%
+  \cleardoublepage%
   \phantomsection%
   \bookmarksetup{startatroot}% Return to root level
   \addcontentsline{toc}{part}{#1}%
@@ -239,6 +311,42 @@
 % Customize List of Figures title
 \renewcommand{\listfigurename}{List of Figures}
 
+% Configure consistent headers and footers
+\pagestyle{fancy}
+\fancyhf{} % Clear all headers and footers
+% Set header rule
+\renewcommand{\headrulewidth}{0.4pt}
+% Even pages (left/verso): Book title
+\fancyhead[LE]{\textsl{Interfaces of Reality}}
+% Odd pages (right/recto): Chapter title
+\fancyhead[RO]{\textsl{\leftmark}}
+% Page numbers in footer, centered
+\fancyfoot[C]{\thepage}
+% Clear headers on chapter pages (they use plain style)
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyfoot[C]{\thepage}%
+  \renewcommand{\headrulewidth}{0pt}%
+}
+% Ensure chapter pages use plain style
+\patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{plain}}{}{}
+
+% Intercept \@chapter to convert "About the Author" to unnumbered
+\makeatletter
+\let\old@chapter\@chapter
+\def\@chapter[#1]#2{%
+  \def\temp{#2}%
+  \def\tempb{About the Author}%
+  \ifx\temp\tempb
+    % Convert to unnumbered chapter (don't increment counter)
+    \@schapter{#2}%
+  \else
+    % Normal numbered chapter
+    \old@chapter[#1]{#2}%
+  \fi
+}
+\makeatother
+
 % Fix Preface to be at root level (sibling of Table of Contents) and prevent duplication
 \makeatletter
 % Patch chapter* to suppress automatic bookmark for Preface and About the Author
@@ -276,12 +384,20 @@
     \prefacechapterfalse
   \else
     \ifx\temp\tempb
-      % About the Author: suppress automatic bookmark (we create it in addcontentsline)
+      % About the Author: suppress automatic bookmark and create our own
       \let\Hy@writebookmark\@gobble
       \let\bookmark\@gobble
       \old@schapter{#1}%
       \let\Hy@writebookmark\Hy@writebookmark@original
       \let\bookmark\bookmark@original
+      % Create our manual bookmark after chapter is created (only if not already created)
+      \ifaboutauthoradded\else
+        \bookmarksetup{startatroot}%
+        \phantomsection
+        \hypertarget{aboutauthoranchor}{}%
+        \bookmark[level=0,dest=aboutauthoranchor]{#1}%
+        \aboutauthoraddedtrue
+      \fi
     \else
       \old@schapter{#1}%
     \fi
@@ -295,9 +411,10 @@
 \newif\ifaboutauthoradded
 \aboutauthoraddedfalse
 \renewcommand{\addcontentsline}[3]{%
-  \def\temp{#1#2#3}%
-  \def\tempa{tocchapterPreface}%
-  \def\tempb{tocchapterAbout the Author}%
+  % Check if this is Preface or About the Author by comparing the title (#3)
+  \def\temp{#3}%
+  \def\tempa{Preface}%
+  \def\tempb{About the Author}%
   \ifx\temp\tempa
     % Preface: only add TOC entry (bookmark already created in @schapter)
     \ifprefaceadded\else
@@ -306,13 +423,9 @@
     \fi
   \else
     \ifx\temp\tempb
-      % About the Author: add as part-level entry with root-level bookmark
+      % About the Author: only add TOC entry (bookmark already created in @schapter)
       \ifaboutauthoradded\else
-        \bookmarksetup{startatroot}%
-        \phantomsection
-        \hypertarget{aboutauthoranchor}{}%
         \oldaddcontentsline{toc}{part}{#3}%
-        \bookmark[level=0,dest=aboutauthoranchor]{#3}%
         \aboutauthoraddedtrue
       \fi
     \else
@@ -336,13 +449,14 @@
       \bookmark[level=0,dest=tocanchor]{Table of Contents}%
       \tocbookmarkcreatedtrue
     \fi
+    \pagestyle{fancy}%
     \oldtableofcontents
     % Add List of Figures after Table of Contents
     \clearpage
-    \bookmark[level=0,dest=lofanchor]{List of Figures}%
     \phantomsection
     \hypertarget{lofanchor}{}%
     \listoffigures
+    \bookmark[level=0,dest=lofanchor]{List of Figures}%
   }
   
   % Bookmark for Index (at the end) - at part level, explicitly at root

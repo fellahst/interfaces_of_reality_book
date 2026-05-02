@@ -4,7 +4,7 @@ Having discovered how systems design is interface design, we can now see how pow
 
 Power has always followed boundaries. Those who control borders control trade. Those who define laws control behavior. Those who design protocols shape markets. Those who set standards determine what counts as valid, legitimate, or even real. This is not new, but what has changed in our time is profound.
 
-Right now, as you read this, engineers are designing platforms that shape how billions of people perceive reality. Right now, algorithms are filtering what information reaches us, what actions are possible, what futures are visible. Right now, we are redesigning interfaces that shape cognition, communication, economics, and increasingly, the physical world itself.
+Engineers are designing platforms that shape how billions of people perceive reality. Algorithms are filtering what information reaches us, what actions are possible, what futures are visible. We are redesigning interfaces that shape cognition, communication, economics, and increasingly, the physical world itself.
 
 Think of it like this: power is not the ability to force outcomes. It is the ability to shape the game board itself. A tax code doesn't force you to pay, it shapes which moves are costly and which are beneficial. A platform doesn't force you to see certain content, it shapes which content is visible and which is hidden. The power is in the interface, the boundary that regulates interaction. 
 

@@ -20,8 +20,8 @@ permalink: /get-the-book.html
             <p style="font-size: 1.2em; color: #666; margin-bottom: 10px;"><strong>How Life, Mind, and Machines Navigate a World of Possibilities</strong></p>
             <p style="font-size: 1.1em; color: #888; margin-bottom: 40px;">by {{ site.author }}</p>
             
-            <a href="https://www.amazon.com/dp/YOUR_ISBN_HERE" 
-               target="_blank" 
+            <a href="https://a.co/d/0hU5Ff4j"
+               target="_blank"
                rel="noopener noreferrer"
                class="amazon-button">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">

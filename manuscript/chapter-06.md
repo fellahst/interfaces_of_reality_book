@@ -12,7 +12,7 @@ In this chapter, we take a crucial step. We stop treating \index{space}space and
 
 ## Locality: The Interface of Separation
 
-One of the most fundamental assumptions in physics is **locality**: the principle that influence must travel through space, and that this travel takes time. It dictates that reality is local; what happens *here* is shaped by immediate surroundings, while distant events can only arrive later, carried by the delay of propagation.
+One of the most fundamental assumptions in physics is **\index{locality}locality**: the principle that influence must travel through space, and that this travel takes time. It dictates that reality is local; what happens *here* is shaped by immediate surroundings, while distant events can only arrive later, carried by the delay of propagation.
 
 This assumption aligns seamlessly with intuition. To affect something across the room, you must cross the distance; to reach someone across the world, you must send a signal. We instinctively understand that distance acts as a buffer, the farther away an object is, the safer it is from immediate interference. This lag feels like an inevitable law of nature, but it is not a logical necessity. A universe of instant connection is entirely conceivable.
 
@@ -22,13 +22,13 @@ This reveals a critical truth: **Space relies on time to exist.** If influence w
 
 ![Locality: The Interface of Separation](assets/Locality.jpg){#fig:locality width=80%}
 
-Figure \ref{fig:locality} illustrates how locality creates separation. Two distant points in space (Earth and Mars) are shown with a signal/light ray traveling between them, demonstrating the time delay. The illustration shows that instantaneous connection would collapse distance (dotted lines showing "if instant"). A clock shows the time delay. Locality acts as a "cosmic rate-limiter," creating a buffer where the farther away something is, the safer it is from immediate interference. Seen through the lens of interfaces, locality is the rule that enforces **decoupling**. It acts as a cosmic rate-limiter, shielding internal dynamics from the infinite noise of the universe. It creates a "causal horizon" that allows objects to possess their own distinct state, isolated from the immediate chaos of distant stars. Locality is the interface that transforms raw geometry into meaningful separation. **It is the latency that makes space real.**
+Figure \ref{fig:locality} illustrates how locality creates separation. Two distant points in space (Earth and Mars) are shown with a signal/light ray traveling between them, demonstrating the time delay. The illustration shows that instantaneous connection would collapse distance (dotted lines showing "if instant"). A clock shows the time delay. Locality acts as a "cosmic rate-limiter," creating a buffer where the farther away something is, the safer it is from immediate interference. Seen through the lens of interfaces, locality is the rule that enforces **\index{decoupling}decoupling**. It acts as a cosmic rate-limiter, shielding internal dynamics from the infinite noise of the universe. It creates a "\index{causal horizon}causal horizon" that allows objects to possess their own distinct state, isolated from the immediate chaos of distant stars. Locality is the interface that transforms raw geometry into meaningful separation. **It is the latency that makes space real.**
 
 ## The Quantum Loophole: Connection vs. Communication
 
 But here's where things get really interesting. There is a phenomenon that seems to punch a hole right through this logic: \index{quantum entanglement}**quantum entanglement**. This is one of the most mysterious and profound discoveries in all of physics, and it reveals something extraordinary about how interfaces actually work.
 
-In quantum mechanics, two particles can become "entangled," sharing a single mathematical state. If you separate them by galaxies and measure one, the other responds instantly. The state collapses faster than light can travel. This seems to violate the interface of locality, suggesting that the universe is, deep down, a single, non-local block where distance is an illusion. But the reality is more subtle, and more beautiful.
+In \index{quantum mechanics}quantum mechanics, two particles can become "entangled," sharing a single mathematical state. If you separate them by galaxies and measure one, the other responds instantly. The state collapses faster than light can travel. This seems to violate the interface of locality, suggesting that the universe is, deep down, a single, non-local block where distance is an illusion. But the reality is more subtle, and more beautiful.
 
 But seen as an interface, \index{entanglement}entanglement reveals a subtle and brilliant constraint.
 
@@ -81,7 +81,7 @@ Modern physics unifies space and time into spacetime, often described as a geome
 
 A more revealing view is to see spacetime as a global interface system, a set of constraints that governs which events can be causally related, how signals propagate, and how energy and momentum flow.
 
-In general relativity, the presence of matter and energy curves spacetime. But what does this curvature actually mean? It means that the rules of adjacency change. Paths that were once stable become unstable; new trajectories become preferred. The interface that regulates how objects can move through space is reshaped.
+In \index{general relativity}general relativity, the presence of matter and energy curves spacetime. But what does this curvature actually mean? It means that the rules of adjacency change. Paths that were once stable become unstable; new trajectories become preferred. The interface that regulates how objects can move through space is reshaped.
 
 Gravity does not pull objects through space. It reshapes the interface that defines motion itself. An object in free fall is not being pulled; it is following the path that the curved spacetime interface makes available. The path looks curved to us because we are using a different coordinate system, but from the object's perspective, it is following the straightest possible path through the interface.
 

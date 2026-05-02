@@ -1,6 +1,6 @@
-\myepilogue{Epilogue ,  Learning to See the Edges}
+\myepilogue{Epilogue}{Learning to See the Edges}
 
-In a universe that began as undifferentiated energy, something extraordinary happened. Boundaries appeared. Not objects, boundaries. And these boundaries, these interfaces, made everything else possible. They shaped the flow of energy into matter, matter into life, life into mind, and mind into meaning. In a universe otherwise indifferent to stability, they made persistence possible. They allowed something to last long enough to matter. This is extraordinary: the same principle that creates atoms also creates meaning, and understanding this changes everything.
+In a universe that began as undifferentiated energy, something remarkable happened. Boundaries appeared. Not objects, boundaries. And these boundaries, these interfaces, made everything else possible. They shaped the flow of energy into matter, matter into life, life into mind, and mind into meaning. In a universe otherwise indifferent to stability, they made persistence possible. They allowed something to last long enough to matter. The same principle that creates atoms also creates meaning, and understanding this changes everything.
 
 You have just completed a journey through the hidden architecture of reality. You have seen how interfaces operate from the most fundamental level of physics to the most complex systems of meaning and understanding. You have discovered that the universe is not a collection of separate domains, but a single architecture, built from interfaces that stack hierarchically. The same principles that create atoms also create minds. This is not philosophy. This is what the evidence shows.
 

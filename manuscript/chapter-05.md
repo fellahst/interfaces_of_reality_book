@@ -2,9 +2,9 @@
 
 If physical interfaces explain why matter can exist at all, \index{thermodynamics}thermodynamic interfaces explain something even more puzzling: why order exists in a universe that relentlessly tends toward disorder. This is one of the deepest mysteries in all of science, and the answer reveals something profound about how reality actually works.
 
-Right now, as you read this, your body is maintaining order while the universe around it becomes more disordered. Your cells are exporting entropy, your metabolism is creating structure, your brain is organizing information. This is not a violation of physics, it's physics working through interfaces. And understanding how this works will change how you see life itself.
+As you read this, your body is maintaining order while the universe around it becomes more disordered. Your cells are exporting entropy, your \index{metabolism}metabolism is creating structure, your brain is organizing information. This is not a violation of physics, it's physics working through interfaces. And understanding how this works will change how you see life itself.
 
-Every student of physics learns the same unsettling principle early on. Left to itself, every system moves toward maximum entropy. Differences flatten out. Gradients disappear. Structure decays. Given enough time, everything should become uniform, inert, and dull.
+Every student of physics learns the same unsettling principle early on. Left to itself, every system moves toward maximum entropy. Differences flatten out. \index{gradient}Gradients disappear. Structure decays. Given enough time, everything should become uniform, inert, and \index{equilibrium}equilibrium.
 
 And yet, the universe is anything but dull. Stars burn. Weather churns. Chemical reactions oscillate. Life arises. Complexity grows. Even human civilization, arguably one of the most intricate structures ever produced, exists in defiance of the relentless pull toward equilibrium. How is this possible?
 
@@ -28,7 +28,7 @@ With physical interfaces creating stability, we can now see how thermodynamic in
 
 Consider a simple example: a refrigerator. You probably have one in your kitchen right now.
 
-Inside the fridge, temperature is low and stable. The food maintains its structure. Outside, heat is expelled into the kitchen. The refrigerator does not violate thermodynamics; it relies on a carefully engineered interface, the compressor and coils, that channels energy flow. It creates a boundary that allows entropy to flow out while keeping order inside.
+Inside the fridge, temperature is low and stable. The food maintains its structure. Outside, heat is expelled into the kitchen. The refrigerator does not violate thermodynamics; it relies on a carefully engineered interface, the compressor and coils, that channels \index{energy flow}energy flow. It creates a boundary that allows entropy to flow out while keeping order inside.
 
 Think of it like a one-way valve. Entropy flows out, but order stays in. The interface doesn't stop entropy, it redirects it. This is the secret of all order in the universe.
 
@@ -39,16 +39,16 @@ When this interface fails, the refrigerator stops working. The food spoils. Orde
 The same principle applies throughout nature:
 
 * **Stars:** A star maintains its structure by radiating energy into space. The nuclear fusion at its core creates order, but that order persists only because the star’s surface allows energy to flow outward. This interface regulates the balance between gravitational collapse and thermal expansion.
-* **Hurricanes:** A hurricane persists by dissipating heat from warm ocean water into the atmosphere. It is an interface that channels a temperature gradient into an organized flow.
+* **Hurricanes:** A hurricane persists by dissipating heat from warm ocean water into the atmosphere. It is an interface that channels a \index{gradient}temperature \index{gradient}gradient into an organized flow.
 * **Cells:** A living cell remains ordered by exporting waste and heat to its surroundings. The cell membrane regulates this exchange, preventing the cell from reaching equilibrium,death,with its environment.
 
-In every case, order is not isolated. It is coupled to disorder elsewhere. The boundary that regulates this coupling is the thermodynamic interface.
+In every case, order is not isolated. It is \index{coupling}coupled to disorder elsewhere. The boundary that regulates this \index{coupling}coupling is the thermodynamic interface.
 
 ## Dissipative Structures: Order That Feeds on Flow
 
 In the mid-20th century, physicist \index{Ilya Prigogine}Ilya Prigogine formalized this understanding by introducing the concept of \index{dissipative structures}**dissipative structures**.
 
-These are organized patterns that arise and persist solely because energy is flowing through them. Unlike a crystal, which maintains its structure by sitting inertly in equilibrium, a dissipative structure maintains its shape by continually processing flux. They exist *because* they are far from equilibrium.
+These are organized patterns that arise and persist solely because energy is flowing through them. Unlike a crystal, which maintains its structure by sitting inertly in equilibrium, a dissipative structure maintains its shape by continually processing flux. They exist *because* they are \index{far-from-equilibrium}far from equilibrium.
 
 Crucially, a dissipative structure is not a "thing" in the traditional sense. It is a process constrained by a boundary. What stabilizes it is not its material composition,the molecules are constantly changing,but the interface governing the relationship between energy input and dissipation.
 
@@ -56,7 +56,7 @@ Consider the classic example of \index{Bénard convection cell}**Bénard convect
 
 ![Solar Granules Rayleigh-Bénard Convection cells](assets/solar_granules.jpg){#fig:benard-cells width=80%}
 
-When you heat a thin layer of fluid from below, the energy wants to move to the cooler surface above. If the interface allowed for instant equalization, the fluid would boil chaotically. Instead, the interface constrains the flow, forcing thermal energy to climb a specific gradient.
+When you heat a thin layer of fluid from below, the energy wants to move to the cooler surface above. If the interface allowed for instant equalization, the fluid would boil chaotically. Instead, the interface constrains the flow, forcing thermal energy to climb a specific \index{gradient}gradient.
 
 To navigate this constraint efficiently, the fluid self-organizes. Millions of molecules align into hexagonal pillars,cells of rising warm fluid and sinking cool fluid. These cells are stable, persistent, and highly organized.
 
@@ -82,7 +82,7 @@ Similarly, a thermodynamic interface constrains how energy flows, creating chann
 
 One of the most striking features of dissipative systems is that order is not an anomaly. It is a solution.
 
-When an interface constrains a powerful energy flow, the system acts like a pressurized fluid looking for a release valve. If the flow is weak, random diffusion is enough. But push the system harder, and random motion becomes a bottleneck. To dump the energy faster, the system must organize.
+When an interface constrains a powerful \index{energy flow}energy flow, the system acts like a pressurized fluid looking for a release valve. If the flow is weak, random diffusion is enough. But push the system harder, and random motion becomes a bottleneck. To dump the energy faster, the system must organize.
 
 This turns the common understanding of the Second Law of Thermodynamics on its head. We usually think entropy destroys structure. But in these systems, **structure is the mechanism used to maximize entropy production.**
 
@@ -148,7 +148,7 @@ Each layer builds on the previous one, adding new constraints while relying on o
 
 ## Why Life Was Possible at All
 
-A common misconception is that life is a sudden, miraculous rebellion against a dead universe. But as we have seen, the physical universe is not dead. Thanks to thermodynamic interfaces, it is already teeming with active, long-lived, far-from-equilibrium structures. This is extraordinary: life did not emerge from a featureless soup. It arose on a planet that was already a churning engine of dissipation.
+A common misconception is that life is a sudden, miraculous rebellion against a dead universe. But as we have seen, the physical universe is not dead. Thanks to thermodynamic interfaces, it is already teeming with active, long-lived, far-from-equilibrium structures. This is significant: life did not emerge from a featureless soup. It arose on a planet that was already a churning engine of dissipation.
 
 The early Earth was a tapestry of potent interfaces: thermal gradients at deep-sea vents, chemical tension between crust and ocean, and solar flux in the atmosphere. These were active drivers. Pre-biotic chemistry was a guided process, following the paths these interfaces made available. Life didn't have to invent order; it inherited it.
 

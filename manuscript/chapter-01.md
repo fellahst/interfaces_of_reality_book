@@ -4,7 +4,7 @@ Here's a puzzle: Imagine a universe where everything is made of things. Particle
 
 This is the story we've told ourselves for centuries. It is intuitive, powerful, and remarkably successful. But it is also incomplete, and the evidence is everywhere, once you know where to look.
 
-Right now, as you read this, your body is replacing millions of cells. Yet you remain recognizably you. How is that possible? Right now, AI systems are discovering patterns that evolution took millions of years to find. How? Right now, a traffic jam is forming on a highway somewhere, even though no one intended to create it. Why? These puzzles point to something deeper than objects. They point to boundaries. And understanding those boundaries will change how you see everything.
+Right now, as you read this, your body is replacing millions of cells. Yet you remain recognizably you. How is that possible? Right now, AI systems are discovering \index{pattern}patterns that \index{evolution}evolution took millions of years to find. How? Right now, a \index{traffic jam}traffic jam is forming on a highway somewhere, even though no one intended to create it. Why? These puzzles point to something deeper than objects. They point to boundaries. And understanding those boundaries will change how you see everything.
 
 For now, think of an interface as a boundary that constrains interaction while enabling coordination. A door is an interface, it constrains how you can enter, but it also makes a room possible. A cell membrane is an interface, it constrains what can pass through, but it also makes the cell possible. We'll refine this definition in Chapter 3, but this working understanding will help you see the pattern as we explore it.
 
@@ -32,7 +32,7 @@ This was not mysticism in the modern sense. It was an early recognition that str
 
 \index{category theory}Category theory, a branch of modern mathematics, begins with a startling move: it refuses to treat objects as primary. This sounds like abstract philosophy, but it's actually one of the most powerful tools in modern mathematics, and it reveals something profound about reality itself.
 
-In category theory, objects do not matter by themselves. What matters are the morphisms, the transformations, mappings, and relationships between them. An object is defined entirely by how it relates to other objects. Remove the relationships, and the object loses its identity. Think of it like this: a word in a language is defined not by its letters, but by how it relates to other words. Remove those relationships, and it's just marks on a page.
+In category theory, objects do not matter by themselves. What matters are the \index{morphism}morphisms, the transformations, mappings, and relationships between them. An object is defined entirely by how it relates to other objects. Remove the relationships, and the object loses its identity. Think of it like this: a word in a language is defined not by its letters, but by how it relates to other words. Remove those relationships, and it's just marks on a page.
 
 ![Category Theory: Relationships Define Objects](assets/category_theory_relationships.jpg){#fig:category-theory width=80%}
 
@@ -48,7 +48,7 @@ This perspective has proven extraordinarily powerful. It has unified disparate b
 
 ### Physics Without Particles
 
-A similar shift appears in \index{Wolfram, Stephen}Stephen Wolfram's approach to fundamental physics, and it's even more radical. In the Wolfram model, the universe is not made of particles or fields. It is made of rewriting rules operating on networks. Space itself is an evolving graph. Time is the application of transformation rules. Physical laws are emergent regularities produced by repeated constraint-preserving updates.
+A similar shift appears in \index{Wolfram, Stephen}Stephen Wolfram's approach to fundamental physics, and it's even more radical. In the \index{Wolfram model@Wolfram model}Wolfram model, the universe is not made of particles or fields. It is made of rewriting rules operating on networks. Space itself is an evolving graph. Time is the application of transformation rules. Physical laws are emergent regularities produced by repeated constraint-preserving updates.
 
 ![Wolfram Model: Particles as Patterns in Networks](assets/wolfram_model_network.jpg){#fig:wolfram-model width=80%}
 
@@ -58,7 +58,7 @@ There are no fundamental "things" here either, only relations, updates, and inva
 
 Once again, objects appear, but only after structure stabilizes. The electron you think of as a thing is actually a stable pattern in a network, a pattern that persists because the underlying rules constrain how it can interact. This is not just theory; the Wolfram model has shown that simple rules operating on networks can reproduce many features of quantum mechanics, general relativity, and particle physics.
 
-This is not just a theoretical curiosity. The Wolfram model has shown that simple rules operating on networks can reproduce many features of quantum mechanics, general relativity, and particle physics. The familiar objects of physics, electrons, photons, quarks, emerge as stable patterns in a deeper computational process.
+This is not just a theoretical curiosity. The Wolfram model has shown that simple rules operating on networks can reproduce many features of \index{quantum mechanics}quantum mechanics, \index{general relativity}general relativity, and particle physics. The familiar objects of physics, electrons, photons, quarks, emerge as stable patterns in a deeper computational process.
 
 The implications are profound. If particles are not fundamental, but emergent patterns, then the question shifts from "what are particles made of?" to "what makes these patterns stable?" The answer lies not in the particles themselves, but in the constraints that preserve their structure.
 
@@ -110,7 +110,7 @@ Figure \ref{fig:puzzle-persistence} shows three examples of persistence despite 
 
 The common answer is structure. But structure alone is not enough. Structures can exist fleetingly. What matters is stable structure under variation. To persist is not to remain unchanged. It is to remain coherent despite change. This is extraordinary: identity is not about sameness, it's about maintaining coherence through transformation.
 
-This observation quietly shifts the focus away from substance and toward constraint. Something persists because the ways it can change are limited. Certain variations are allowed; others are suppressed. Some influences matter; others are filtered out. There is, in every case, a boundary that separates what counts as relevant from what does not.
+This observation quietly shifts the focus away from substance and toward \index{constraint}constraint. Something persists because the ways it can change are limited. Certain variations are allowed; others are suppressed. Some influences matter; others are \index{filtering}filtered out. There is, in every case, a \index{boundary}boundary that separates what counts as relevant from what does not.
 
 But what creates these boundaries? What maintains them? And why do certain patterns persist while others dissolve immediately?
 

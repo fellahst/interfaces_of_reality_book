@@ -4,7 +4,7 @@ Having seen how AI systems need boundary awareness, we can now discover how syst
 
 When complex systems fail, they rarely fail at their core. They fail at the edges. This pattern is everywhere, once you know where to look, and it reveals something profound about how systems actually work.
 
-Right now, as you read this, systems are being designed that will shape how billions of people live, work, and interact. The interfaces we build today will determine what is possible tomorrow. This is not abstract. This is urgent, and it demands a new kind of awareness.
+Systems are being designed that will shape how billions of people live, work, and interact. The interfaces we build today will determine what is possible tomorrow. This is not abstract. This is urgent, and it demands a new kind of awareness.
 
 Power grids collapse not because electricity stops obeying physics, but because interfaces between generators, markets, and operators misalign. Financial systems crash not because money loses meaning, but because institutional boundaries amplify risk instead of containing it. Software platforms break not because algorithms forget how to compute, but because contracts between components erode under scale.
 

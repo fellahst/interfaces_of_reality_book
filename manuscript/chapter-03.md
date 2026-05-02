@@ -12,7 +12,7 @@ This chapter introduces the central idea of the book. It is not a new substance,
 
 Everything that follows in this book is an exploration of that claim. This single idea will transform how we understand everything from atoms to minds to societies.
 
-This is extraordinary. The same mechanism that creates atoms also creates meaning. The same boundaries that make matter stable also make minds possible. This is not philosophy. This is what the evidence shows, and it reveals a unified architecture that has been there all along, waiting to be seen.
+This reveals something profound. The same mechanism that creates atoms also creates meaning. The same boundaries that make matter stable also make minds possible. This is not abstract philosophy; it's what the evidence reveals, and it shows a unified architecture that has been there all along, waiting to be seen.
 
 ## What an Interface Really Is
 
@@ -26,7 +26,7 @@ This everyday notion turns out to be a remarkably good metaphor for reality itse
 
 An \index{interface}interface, in the sense used in this book, is not a physical surface necessarily. It is a set of \index{constraint}constraints that mediate interaction between a system and what lies beyond it. It determines what can pass, in what form, and under what conditions. It limits coupling while allowing influence.
 
-You might wonder why this matters. Here's why: if interfaces are fundamental, then understanding how they work, how they stack, and how they fail becomes essential for understanding everything from atoms to minds to societies. This is not just a new way of seeing, it's a new way of understanding what makes things possible.
+You might wonder why this matters. Here's why: if interfaces are fundamental, then understanding how they work, how they \index{stacking}stack, and how they fail becomes essential for understanding everything from atoms to minds to societies. This is not just a new way of seeing, it's a new way of understanding what makes things possible.
 
 Think of it like a bouncer at a club. The bouncer doesn't control everything about the club, but they decide who gets in, who stays out, and under what conditions. They create a boundary that makes the club possible. The club can change its music, its decor, its drinks, but as long as the bouncer maintains the boundary, it remains the same club. That's what an interface does, it creates boundaries that make systems possible.
 
@@ -42,19 +42,19 @@ Interfaces make coherence possible.
 
 Having seen how objects break down, and how interfaces work in principle, we can now see how they solve the puzzle of persistence. Understanding this transforms how we see identity itself.
 
-Recall the puzzle from Chapter 1: Why does a cell remain a cell while its molecules are constantly replaced? Why does a person remain the same individual despite continuous change? Why does anything persist as itself?
+Recall the puzzle from Chapter 1: Why does a cell remain a cell while its molecules are constantly replaced? Why does a person remain the same individual despite continuous change? Why does anything \index{persistence}persist as itself?
 
 The answer is interfaces.
 
 A cell is a cell not because of the particular molecules it contains, but because of the membrane that regulates exchange with its environment. Replace all the molecules, and it remains the same cell as long as the membrane maintains its regulatory function. The membrane is an interface that creates the conditions under which cellular identity can persist.
 
-A person is a person not because of static matter, but because of a coherent set of biological, cognitive, and social interfaces that persist across time. The biological interfaces maintain physical coherence. The cognitive interfaces maintain mental coherence. The social interfaces maintain identity in relation to others. Change the matter, change the thoughts, change the relationships, but as long as the interfaces maintain their function, identity persists.
+A person is a person not because of static matter, but because of a coherent set of biological, cognitive, and social interfaces that persist across time. The biological interfaces maintain physical coherence. The cognitive interfaces maintain mental coherence. The social interfaces maintain \index{identity}identity in relation to others. Change the matter, change the thoughts, change the relationships, but as long as the interfaces maintain their function, identity persists.
 
-Consider the famous thought experiment: if you replace every part of a ship, one plank at a time, is it still the same ship? From the perspective of things, this is a puzzle. From the perspective of interfaces, it is straightforward. As long as the ship maintains its structural integrity, its interfaces with the water, the wind, and the crew, it remains the same ship. The planks are replaceable because they are not what defines the ship; the pattern of constraints that allows the ship to function is what defines it.
+Consider the famous thought experiment: the \index{Ship of Theseus}Ship of Theseus. If you replace every part of a ship, one plank at a time, is it still the same ship? From the perspective of things, this is a puzzle. From the perspective of interfaces, it is straightforward. As long as the ship maintains its structural integrity, its interfaces with the water, the wind, and the crew, it remains the same ship. The planks are replaceable because they are not what defines the ship; the pattern of constraints that allows the ship to function is what defines it.
 
 Identity becomes an emergent property of boundary maintenance. A system is not defined by what it is made of, but by what interactions it can sustain without losing coherence. Change the internals freely, and the system remains "the same" as long as its interfaces hold. Break the interfaces, and identity collapses even if the parts remain.
 
-This reframing resolves a long-standing tension between reductionism and holism. Reductionism fails because it ignores the role of boundaries. It assumes that understanding the parts is sufficient to understand the whole, but it cannot explain why certain arrangements of parts persist while others do not. Holism fails because it often treats wholes as mysterious givens, as if emergence were a kind of magic that makes wholes appear from nowhere. Interfaces show how wholes can emerge naturally, without invoking anything beyond constraints and dynamics.
+This reframing resolves a long-standing tension between \index{reductionism}reductionism and \index{holism}holism. Reductionism fails because it ignores the role of boundaries. It assumes that understanding the parts is sufficient to understand the whole, but it cannot explain why certain arrangements of parts persist while others do not. Holism fails because it often treats wholes as mysterious givens, as if emergence were a kind of magic that makes wholes appear from nowhere. Interfaces show how wholes can emerge naturally, without invoking anything beyond constraints and dynamics.
 
 ## Solving the Puzzle of Convergence
 
@@ -122,23 +122,23 @@ While all interfaces share the same fundamental function, mediating interaction 
 
 **\index{sensorimotor interface}Sensorimotor Interfaces** bridge the gap between organism and environment. They include \index{perception}perception, the active construction of what counts as relevant from sensory data, and \index{action}action, the translation of internal states into external effects. These interfaces create the conditions for cognition and \index{agency}agency.
 
-**\index{cognitive interface}Cognitive Interfaces** operate at the level of minds and meaning. They include \index{prediction}predictive models that maintain \index{coherence}coherence between expectations and reality, attention mechanisms that filter information, and \index{inference}inferential processes that navigate possibility spaces. These interfaces create the conditions for intelligence and understanding.
+**\index{cognitive interface}Cognitive Interfaces** operate at the level of minds and meaning. They include \index{prediction}predictive models that maintain \index{coherence}coherence between expectations and reality, \index{attention mechanism}attention mechanisms that filter information, and \index{inference}inferential processes that navigate possibility spaces. These interfaces create the conditions for intelligence and understanding.
 
 **\index{semantic interface}Semantic Interfaces** enable \index{meaning}meaning to stabilize across systems. They include language grammars that constrain how words combine, shared semantics that allow communication between minds, and \index{ontology}ontologies that regulate how concepts relate. These interfaces create the conditions for knowledge and culture.
 
 **\index{social interface}Social Interfaces** coordinate behavior across individuals. They include norms, institutions, and legal frameworks that shape how people can interact while preserving social \index{coherence}coherence. These interfaces create the conditions for cooperation and collective action.
 
-**\index{technological interface}Technological Interfaces** are explicitly designed by humans, though they often rediscover patterns that appear naturally. They include APIs, protocols, and user interfaces that enable systems to work together. These interfaces create the conditions for complex engineered systems.
+**\index{technological interface}Technological Interfaces** are explicitly designed by humans, though they often rediscover patterns that appear naturally. They include \index{API@API (Application Programming Interface)}APIs, protocols, and user interfaces that enable systems to work together. These interfaces create the conditions for complex engineered systems.
 
 This taxonomy is not rigid. Interfaces often span categories, a biological membrane is also a physical and thermodynamic interface. The categories help us organize our thinking, but the boundaries between them are themselves interfaces: permeable, selective, and enabling rather than absolute.
 
 What unifies all these types is their function: they constrain interaction in ways that create stable patterns. They limit coupling while allowing influence. They separate while enabling connection. They create boundaries that make coherence possible.
 
-As we explore each domain in the chapters that follow, we will see how the same principles apply across scales and substrates. The physical interfaces of Chapter 4 create the foundation. The biological interfaces of Chapters 7-10 build upon them. The semantic interfaces of Chapters 11-13 add another layer. And the technological interfaces of Chapters 14-16 show how we can consciously design what nature discovers.
+As we explore each domain in the chapters that follow, we will see how the same principles apply across scales and substrates. The physical interfaces of Chapter 4 create the foundation. The biological interfaces of Chapters 7-10 build upon them. The semantic interfaces of Chapters 11-13 add another layer. And the technological interfaces of Chapters 14-16 show how we can consciously design what nature discovers. This \index{stacking}stacking of interfaces creates the hierarchical structure of reality.
 
 ![The Complete Interface Stack](assets/interface_stack.jpg){#fig:interface-stack width=80%}
 
-Figure \ref{fig:interface-stack} illustrates how interfaces stack hierarchically, each layer building upon the ones below. Physical interfaces form the foundation, with spacetime and thermodynamic interfaces creating the framework for order. Biological interfaces add self-maintenance, sensorimotor interfaces enable agency, cognitive interfaces create intelligence, semantic interfaces stabilize meaning, social interfaces coordinate behavior, and technological interfaces enable designed systems. Each layer constrains interaction while preserving coherence, creating new possibilities through accumulation rather than replacement.
+Figure \ref{fig:interface-stack} illustrates how interfaces stack \index{hierarchy}hierarchically, each layer building upon the ones below. Physical interfaces form the foundation, with spacetime and thermodynamic interfaces creating the framework for order. Biological interfaces add self-maintenance, sensorimotor interfaces enable agency, cognitive interfaces create intelligence, semantic interfaces stabilize meaning, social interfaces coordinate behavior, and technological interfaces enable designed systems. Each layer constrains interaction while preserving coherence, creating new possibilities through accumulation rather than replacement.
 
 
 ## Emergence Without Magic
@@ -203,7 +203,7 @@ In this chapter, we have replaced a familiar picture of reality with a quieter, 
 
 We have seen how interfaces solve the puzzle of persistence: they create the conditions under which identity can be maintained despite constant change. We have seen how interfaces solve the puzzle of convergence: they shape the space of possibilities, creating the basins of attraction that systems fall into.
 
-This is extraordinary. The same mechanism that allows a cell to maintain its identity is the same mechanism that guides evolution toward certain solutions. The constraint that enables stability is also the constraint that shapes the space of possibilities. One mechanism solves both puzzles. This is not coincidence. This is the deep structure of reality itself.
+This is significant. The same mechanism that allows a cell to maintain its identity is the same mechanism that guides evolution toward certain solutions. The constraint that enables stability is also the constraint that shapes the space of possibilities. One mechanism solves both puzzles. This is not coincidence. This is the deep structure of reality itself.
 
 The next step is to see how this abstract idea plays out in the most concrete domain of all: the physical world. If interfaces really are fundamental, they must appear even at the level of matter, forces, and fields.
 

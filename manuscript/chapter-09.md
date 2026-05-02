@@ -106,7 +106,7 @@ This is why prediction is so central to cognition. It is not a luxury; it is a n
 
 Consider a simple example: maintaining balance while walking. Your brain constantly predicts where your body will be, based on your movements and the terrain. When the prediction is accurate, you walk smoothly. When it is violated, when you step on something unexpected, you stumble. The surprise threatens your balance, and you must act quickly to restore it.
 
-This is free energy minimization in action. The system acts to keep sensory inputs within expected bounds, maintaining the interface that allows it to persist.
+This is \index{active inference}free energy minimization in action. The system acts to keep sensory inputs within expected bounds, maintaining the interface that allows it to persist. This process of acting to minimize prediction error is called active inference: the system doesn't just passively predict, it actively samples the world to confirm its expectations.
 
 ## Layers of Blankets
 
@@ -156,9 +156,9 @@ Figure \ref{fig:world-model} illustrates how different organisms inhabit differe
 
 ## The Ethical Undercurrent
 
-The emergence of selves introduces value. If a system works to minimize surprise and maintain its boundary, then certain states matter more than others. Some outcomes are preferred, others avoided.
+The emergence of selves introduces \index{value}value. If a system works to minimize surprise and maintain its boundary, then certain states matter more than others. Some outcomes are preferred, others avoided.
 
-Value is not imposed from outside. It arises from the need to persist. Something that helps maintain the interface is good. Something that threatens it is bad. This is not moral value, but functional value, value that emerges from the structure of the system itself.
+\index{value}Value is not imposed from outside. It arises from the need to persist. Something that helps maintain the interface is good. Something that threatens it is bad. This is not moral \index{value}value, but functional \index{value}value, \index{value}value that emerges from the structure of the system itself.
 
 This insight will later have profound implications for ethics, artificial intelligence, and responsibility. But it already appears here, in the most basic inferential systems. Selves create value because they create systems that must maintain themselves.
 
@@ -176,9 +176,9 @@ Each level builds on the previous ones, adding new constraints while relying on 
 
 This perspective unifies. It shows that the same principles operate at every level. The self is not a mystery to be solved, but a pattern to be understood. It emerges naturally from the stacking of interfaces, each creating the conditions for the next.
 
-This is extraordinary. The same principles that create atoms also create selves. The boundaries that make matter stable also make minds possible. There is no sharp line between matter and mind-only a gradual refinement of interfaces. This is not philosophy. This is what the evidence shows, and it reveals a unified architecture that has been there all along.
+This is profound. The same principles that create atoms also create selves. The boundaries that make matter stable also make minds possible. There is no sharp line between matter and mind-only a gradual refinement of interfaces. This is not theoretical; it's what the evidence reveals, and it shows a unified architecture that has been there all along.
 
-Right now, as you read this, your sense of self is being maintained by a Markov blanket. The boundary between you and the world is not just physical, it is inferential. You are not just a body, you are a process that maintains coherence through inference. This is extraordinary, and it reveals something profound: the same principles that create atoms also create selves.
+The Markov blanket that maintains your sense of self operates continuously, creating the inferential boundary between you and the world through the same principles that create atoms.
 
 In the next chapter, we will examine emergence itself, not as mystery or magic, but as the natural consequence of interfaces layered upon interfaces. We will see how complex behaviors arise without centralized control, how intelligence and coordination scale without collapsing into chaos.
 

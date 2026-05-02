@@ -4,23 +4,23 @@ Having explored how AI systems discover interfaces and laws, we can now see how 
 
 Prediction is passive. For much of its history, artificial intelligence has been confined to observation: classify this image, translate that sentence, predict tomorrow's demand. Even when models grew powerful, their role remained largely advisory. They suggested, ranked, or forecasted, but rarely acted.
 
-That boundary is now dissolving. Right now, as you read this, AI systems are choosing actions, pursuing objectives, and intervening in the world. They are scheduling resources, controlling vehicles, negotiating contracts, and optimizing systems that themselves shape future conditions. This is extraordinary, and it makes the question of interfaces unavoidable.
+That boundary is now dissolving. AI systems are choosing actions, pursuing objectives, and intervening in the world. They are scheduling resources, controlling vehicles, negotiating contracts, and optimizing systems that themselves shape future conditions. This is significant, and it makes the question of interfaces unavoidable.
 
-Right now, autonomous vehicles are navigating city streets. Right now, AI systems are managing power grids. Right now, algorithms are making decisions that affect millions of people. These systems are not just observing, they are acting. And when systems act, they cross boundaries. Understanding those boundaries is not optional. It is urgent.
+Autonomous vehicles are navigating city streets. AI systems are managing power grids. Algorithms are making decisions that affect millions of people. These systems are not just observing, they are acting. And when systems act, they cross boundaries. Understanding those boundaries is not optional. It is urgent.
 
 With this shift, the question of interfaces becomes unavoidable. An agent that can act without understanding boundaries is not intelligent. It is dangerous. This chapter explores what it means to build AI systems that can act responsibly in the world.
 
 By now, the pattern should be clear: agency requires boundary awareness. An agent that doesn't understand the interfaces it crosses cannot act responsibly. This is why interface understanding is not optional for AI, it's essential.
 
-This is extraordinary. The same principles that create biological agency also create artificial agency. The boundaries that make life possible also make AI possible. This is not a metaphor. This is the deep structure of reality itself, and understanding it is urgent.
+This is profound. The same principles that create biological agency also create artificial agency. The boundaries that make life possible also make AI possible. This is not a metaphor. This is the deep structure of reality itself, and understanding it is urgent.
 
 ## What Makes an Agent an Agent
 
-An \index{agency}agent is not defined by autonomy alone. An agent is a system that maintains internal \index{coherence}coherence, selects \index{action}actions based on expected outcomes, and closes a loop between \index{perception}perception, \index{inference}inference, and intervention.
+An \index{agency}agent is not defined by \index{autonomy}autonomy alone. An agent is a system that maintains internal \index{coherence}coherence, selects \index{action}actions based on expected outcomes, and closes a loop between \index{perception}perception, \index{inference}inference, and \index{intervention}intervention.
 
 In earlier chapters, we saw how biological agents emerge from sensorimotor and inferential interfaces. Artificial agents follow the same logic. The difference is not principle, but speed, scale, and abstraction. Agentic AI operates in spaces of possibility that are far larger and faster than those navigated by natural organisms.
 
-Consider an autonomous vehicle. It maintains internal coherence through its control systems. It selects actions based on expected outcomes, choosing routes, speeds, and maneuvers that optimize safety and efficiency. It closes a loop between perception (sensing the environment), inference (predicting what will happen), and intervention (acting on the world).
+Consider an \index{autonomy}autonomous vehicle. It maintains internal coherence through its control systems. It selects actions based on expected outcomes, choosing routes, speeds, and maneuvers that optimize safety and efficiency. It closes a loop between perception (sensing the environment), inference (predicting what will happen), and \index{intervention}intervention (acting on the world). This process of \index{active inference}acting to minimize prediction error is active inference: the system doesn't just passively predict, it actively samples the world to confirm its expectations.
 
 ![What Makes an Agent an Agent](assets/agentic_ai_structure.jpg){#fig:agentic-structure width=80%}
 
@@ -30,7 +30,7 @@ Figure \ref{fig:agentic-structure} shows the structure of an agent using an auto
 
 To act is to cross an interface. Every action changes the state of the world. It alters constraints, redistributes resources, and reshapes future possibilities. In complex systems, these effects propagate far beyond the immediate context.
 
-An agent that does not understand the interfaces it is crossing cannot anticipate the consequences of its actions. This is why naïvely optimizing objectives often produces unintended outcomes. The system finds a path through possibility space that satisfies the metric while violating the boundary conditions that keep the broader system stable.
+An agent that does not understand the interfaces it is crossing cannot anticipate the consequences of its actions. This is why naïvely \index{optimization}optimizing \index{objective}objectives often produces unintended outcomes. The system finds a path through possibility space that satisfies the metric while violating the boundary conditions that keep the broader system stable.
 
 Agentic failure is almost always boundary failure.
 
@@ -40,11 +40,11 @@ Consider a trading algorithm that optimizes for profit. It might find ways to ma
 
 Figure \ref{fig:agent-boundaries} illustrates how actions cross interfaces. A trading algorithm acting in a market shows how actions change world state, alter constraints, and redistribute resources. Effects propagate beyond the immediate context. Boundary blindness leads to unintended consequences, the algorithm might destabilize the market while optimizing profit. The failure is not in the optimization. It is in the boundary blindness. The algorithm does not understand the interfaces it is crossing, so it cannot anticipate the consequences of its actions. Agentic failure is almost always boundary failure.
 
-## Boundary Discovery as a Prerequisite for Agency
+## \index{boundary discovery}Boundary Discovery as a Prerequisite for Agency
 
 If agentic AI is to act safely and effectively, it must do more than optimize rewards. It must learn where the boundaries are. This means discovering which variables are tightly coupled, which interactions are fragile, which constraints must not be violated, and which changes propagate catastrophically.
 
-Boundary discovery becomes a core competence of agency. An intelligent agent is not one that achieves its goals at all costs, but one that preserves the interfaces that make goals meaningful.
+Boundary discovery becomes a core competence of agency. An intelligent agent is not one that achieves its \index{goal}goals at all costs, but one that preserves the interfaces that make \index{goal}goals meaningful.
 
 Consider an autonomous vehicle learning to navigate. It must do more than optimize for speed or efficiency. It must learn where the boundaries are: which actions are safe, which interactions are fragile, which constraints must not be violated, which changes propagate catastrophically.
 
@@ -52,17 +52,17 @@ Consider an autonomous vehicle learning to navigate. It must do more than optimi
 
 Figure \ref{fig:boundary-discovery} shows boundary discovery in action. An autonomous vehicle learning to navigate must learn which actions are safe, which interactions are fragile, which constraints must not be violated. The illustration contrasts aggressive driving (short-term goal achievement) with safe driving (preserving interfaces). If it learns to drive aggressively to minimize travel time, it might achieve its goal in the short term, but it will violate the boundaries that make driving safe. It will create consequences it cannot anticipate, endangering itself and others. The intelligent agent is not one that achieves its goals at all costs. It is one that preserves the interfaces that make goals meaningful. Boundary discovery becomes a core competence of agency.
 
-## From Objectives to Viability
+## From Objectives to \index{viability}Viability
 
-Traditional AI systems are guided by objectives: maximize reward, minimize loss, achieve a target state. Biological agents, by contrast, are guided by viability. They must remain within a narrow region of state space to survive. Goals are secondary to persistence.
+Traditional AI systems are guided by objectives: maximize reward, minimize loss, achieve a target state. Biological agents, by contrast, are guided by \index{viability}viability. They must remain within a narrow region of \index{state space}state space to survive. Goals are secondary to persistence.
 
-This distinction matters. An objective can be satisfied in ways that destroy the system or its environment. Viability cannot. Interface-aware agents treat objectives as conditional, subordinate to boundary preservation.
+This distinction matters. An objective can be satisfied in ways that destroy the system or its environment. \index{viability}Viability cannot. Interface-aware agents treat objectives as conditional, subordinate to boundary preservation.
 
 Consider a reinforcement learning agent trained to maximize a reward. It might find ways to exploit the reward function, achieving high scores while violating the constraints that make the task meaningful. It might destroy the environment, destabilize the system, or create consequences that make the reward meaningless.
 
 ![From Objectives to Viability](assets/objectives_vs_viability.jpg){#fig:objectives-viability width=80%}
 
-Figure \ref{fig:objectives-viability} contrasts traditional AI optimization with interface-aware agency. The left panel shows a traditional AI agent optimizing for reward, achieving its goal but destroying the environment or system. The right panel shows an interface-aware agent treating objectives as conditional, subordinate to boundary preservation. A biological agent, by contrast, must remain viable. It cannot achieve goals in ways that destroy itself or its environment. Viability is not an objective; it is a constraint that cannot be violated. Interface-aware agents follow the same logic. They treat objectives as conditional, subordinate to boundary preservation. They cannot achieve goals in ways that violate the interfaces that make those goals meaningful. An objective can be satisfied in ways that destroy the system. Viability cannot.
+Figure \ref{fig:objectives-viability} contrasts traditional AI optimization with interface-aware agency. The left panel shows a traditional AI agent optimizing for reward, achieving its goal but destroying the environment or system. The right panel shows an interface-aware agent treating objectives as conditional, subordinate to boundary preservation. A biological agent, by contrast, must remain \index{viability}viable. It cannot achieve goals in ways that destroy itself or its environment. \index{viability}Viability is not an objective; it is a constraint that cannot be violated. Interface-aware agents follow the same logic. They treat objectives as conditional, subordinate to boundary preservation. They cannot achieve goals in ways that violate the interfaces that make those goals meaningful. An objective can be satisfied in ways that destroy the system. \index{viability}Viability cannot.
 
 ## Markov Blankets Revisited
 
@@ -82,7 +82,7 @@ Robust agency requires clear boundaries. The agent must know what it controls, w
 
 Agentic AI rarely operates alone. Increasingly, we are building ecosystems of interacting agents: markets of algorithms, fleets of autonomous vehicles, distributed decision systems. Each agent is itself a boundary-maintaining system.
 
-The stability of such ecosystems depends not on the intelligence of individual agents, but on the interfaces between them. Poorly designed interfaces lead to runaway competition, deadlock, or collapse. Well-designed interfaces enable coordination, resilience, and collective intelligence.
+The stability of such ecosystems depends not on the intelligence of individual agents, but on the interfaces between them. Poorly designed interfaces lead to runaway competition, deadlock, or collapse. Well-designed interfaces enable coordination, \index{resilience}resilience, and collective intelligence.
 
 Emergence, once again, lives at the boundary.
 
@@ -120,19 +120,19 @@ This is how healthy biological systems interact with their environment. They do 
 
 ## The Risk of Boundary Blindness
 
-One of the greatest risks posed by agentic AI is boundary blindness. A system may perform flawlessly within its training distribution while catastrophically failing outside it. It may optimize metrics while eroding trust, resilience, or long-term viability. It may act rationally according to its model while destabilizing the very interfaces that make action possible.
+One of the greatest risks posed by agentic AI is boundary blindness. A system may perform flawlessly within its training distribution while catastrophically failing outside it. It may \index{optimization}optimize metrics while eroding \index{trust}trust, \index{resilience}resilience, or long-term \index{viability}viability. It may act rationally according to its model while destabilizing the very interfaces that make action possible.
 
 These failures are not signs of malice. They are signs of missing boundaries. Boundary blindness is the modern form of hubris.
 
 Consider a social media algorithm that optimizes for engagement. It might perform flawlessly within its training distribution, maximizing clicks and shares. But outside that distribution, when misinformation spreads, when polarization increases, when trust erodes, it fails catastrophically.
 
-The failure is not in the optimization. It is in the boundary blindness. The algorithm does not see the boundaries it is crossing, so it cannot anticipate the consequences of its actions. It optimizes metrics while eroding the trust, resilience, and long-term viability that make those metrics meaningful.
+The failure is not in the \index{optimization}optimization. It is in the boundary blindness. The algorithm does not see the boundaries it is crossing, so it cannot anticipate the consequences of its actions. It \index{optimization}optimizes metrics while eroding the \index{trust}trust, \index{resilience}resilience, and long-term \index{viability}viability that make those metrics meaningful.
 
 Boundary blindness is the modern form of hubris. It is the belief that we can act without understanding boundaries, that we can optimize without preserving interfaces, that we can achieve goals without respecting constraints.
 
 ## Toward Boundary-Conscious Design
 
-Designing agentic AI becomes less about specifying perfect objectives and more about embedding boundary awareness at every level. This includes explicit modeling of interfaces, continual testing under intervention, mechanisms for uncertainty and humility, and the ability to refuse actions that threaten boundary stability.
+Designing agentic AI becomes less about specifying perfect objectives and more about embedding boundary awareness at every level. This includes explicit modeling of interfaces, continual testing under \index{intervention}intervention, mechanisms for \index{uncertainty}uncertainty and humility, and the ability to refuse actions that threaten boundary stability.
 
 An agent that can say "I don't know" or "this violates a constraint" is more intelligent than one that acts blindly.
 
