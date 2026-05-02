@@ -35,7 +35,6 @@ subtitle: How Life, Mind, and Machines Navigate a World of Possibilities
                 <p class="home-lead">Reality organizes itself through <strong>interfaces</strong>: boundaries that constrain interaction while enabling coordination. These interfaces stack hierarchically—each layer builds on those below—so new behavior emerges through accumulated constraints, not by replacing what came before.</p>
                 <div class="home-cta">
                     <a href="{{ '/get-the-book.html' | relative_url }}" class="btn-home btn-home--primary">Get the book</a>
-                    <a href="#book-overview" class="btn-home btn-home--secondary">Watch overview</a>
                 </div>
             </div>
             <div class="home-intro-media">
